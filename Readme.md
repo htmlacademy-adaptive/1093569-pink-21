@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Владимир Попов](https://up.htmlacademy.ru/adaptive/21/user/1093569).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Боровик](https://htmlacademy.ru/profile/mouxez)
 
 ---
 
