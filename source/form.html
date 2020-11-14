@@ -1,10 +1,66 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
 </head>
-<body>
+<body class="page__body">
+<header class="page-header">
+  <a class="page-header__logo-mobile" title="logotype">
+    <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Маленький логотип">
+  </a>
+  <nav class="main-nav">
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="#" title="Home">Главная</a></li>
+        <li class="main-nav__item"><a href="#" title="Photo">Фотографии</a></li>
+        <li class="main-nav__item"><a href="#" title="Contest">Конкурс</a></li>
+        <li class="main-nav__item"><a href="#" title="HTML Academy">HTML Academy</a></li>
+      </ul>
+    </div>
+    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+  </nav>
+</header>
 
+<main class="page-main">
+
+  <h2 class="raffle-title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+
+  <form action="https://echo.htmlacademy.ru" method="post" class="raffle-form">
+    <h3 class="raffle-rules">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h3>
+
+  </form>
+</main>
+
+<footer class="page-footer">
+  <div class="page-footer__wrapper">
+    <a class="page-footer__logo-tablet" title="logotype">
+      <img src="https://via.placeholder.com/145x40" width="145" height="40" alt="Средний логотип">
+    </a>
+    <ul class="page-footer__social-list">
+      <li class="social__item">
+        <a href="https://twitter.com/" class="social__link social__link--twitter" title="twitter">
+          <img src="https://via.placeholder.com/48x48" width="48" height="48" alt="twitter">
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="https://facebook.com/" class="social__link social__link--facebook" title="facebook">
+          <img src="https://via.placeholder.com/48x48" width="48" height="48" alt="facebook">
+        </a>
+      </li>
+      <li class="social__item">
+        <a href="https://youtube.com/" class="social__link social__link--youtube" title="youtube">
+          <img src="https://via.placeholder.com/48x48" width="48" height="48" alt="youtube">
+        </a>
+      </li>
+    </ul>
+    <div class="page-footer__copyright">
+      <p class="copyright__text">Разработано</p>
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link" title="copyright">
+        <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="HTML Academy Logo">
+      </a>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
