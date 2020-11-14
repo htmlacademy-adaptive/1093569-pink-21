@@ -6,16 +6,16 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo-min">
+      <a class="page-header__logo-mobile" title="logotype">
         <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Маленький логотип">
       </a>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="#">Главная</a></li>
-            <li class="main-nav__item"><a href="#">Фотографии</a></li>
-            <li class="main-nav__item"><a href="#">Конкурс</a></li>
-            <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+            <li class="main-nav__item"><a href="#" title="Home">Главная</a></li>
+            <li class="main-nav__item"><a href="#" title="Photo">Фотографии</a></li>
+            <li class="main-nav__item"><a href="#" title="Contest">Конкурс</a></li>
+            <li class="main-nav__item"><a href="#" title="HTML Academy">HTML Academy</a></li>
           </ul>
         </div>
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -29,14 +29,14 @@
       <div class="download-attachment__wrapper">
         <h2 class="visually-hidden">Блок ссылок для скачивания приложения под вашу операционную систему</h2>
         <p class="download-attachment__slogan">Взгляните на жизнь иначе!</p>
-        <a class="download-attachment__download-button" href="https://www.apple.com/" target="_blank">Скачать приложение</a>
-        <a href="https://www.apple.com/" class="download-attachment__download-link" aria-label="apple">
+        <a class="download-attachment__button" href="https://www.apple.com/" target="_blank" title="download">Скачать приложение</a>
+        <a href="https://www.apple.com/" class="download-attachment__link" title="apple" aria-label="apple">
           <img src="https://via.placeholder.com/47x56" width="47" height="56" alt="apple">
         </a>
-        <a href="https://play.google.com/" class="download-attachment__download-link" aria-label="android">
+        <a href="https://play.google.com/" class="download-attachment__link" title="android" aria-label="android">
           <img src="https://via.placeholder.com/43x47" width="43" height="47" alt="android">
         </a>
-        <a href="https://www.microsoft.com/ru-ru/store/apps/windows" class="download-attachment__download-link" aria-label="windows">
+        <a href="https://www.microsoft.com/ru-ru/store/apps/windows" class="download-attachment__link" title="windows" aria-label="windows">
           <img src="https://via.placeholder.com/44x41" width="44" height="41" alt="windows">
         </a>
         <p class="download-attachment__annotation">
@@ -65,7 +65,7 @@
             <p class="advantages__item-description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
           <li class="advantages__item">
-            <h3 class="advantages__item-title advantages__item--friends">Заводит новых друзей</h3>
+            <h3 class="advantages__item-title advantages__item-title--friends">Заводит новых друзей</h3>
             <p class="advantages__item-description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
@@ -75,13 +75,13 @@
     <section class="preview">
       <h3 class="preview__title">Эффект на 24 часа!</h3>
       <p class="preview__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-      <a href="#" class="preview__show-more">Узнать больше об исследовании</a>
+      <a href="#" class="preview__show-more" title="show-more">Узнать больше об исследовании</a>
     </section>
 
     <section class="reviews">
       <h2 class="visually-hidden">Отзывы о нашем приложении</h2>
       <div class="reviews__wrapper slider">
-        <div class="reviews__list slider__list">
+        <div class="reviews__list">
           <blockquote class="reviews__item slider__item">
             <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
               А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
@@ -98,11 +98,11 @@
     </section>
 
     <section class="price">
-      <div class="price__wrapper slider">
+      <div class="price__wrapper">
         <h2 class="visually-hidden">Тарифы</h2>
         <table class="price__table">
           <tr class="price__row">
-            <td class="price__data--hidden"></td>
+            <td class="price__data price__data--hidden"></td>
             <td class="price__data">
               <h3 class="price__data-title">База</h3>
               <p class="price__data-cost">1,99 USD</p>
@@ -117,48 +117,48 @@
             </td>
           </tr>
           <tr class="price__row">
-            <td class="price__data--not-mobile">Розовый фильтр</td>
+            <td class="price__data price__data--not-mobile">Розовый фильтр</td>
             <td class="price__data">
-              <span class="price__data-text--mobile">Розовый фильтр</span>
-              <span class="price__data-cell--checked"></span>
+              <span class="price__data-text price__data-text--mobile">Розовый фильтр</span>
+              <span class="price__data-cell price__data-cell--checked"></span>
             </td>
             <td class="price__data">
-              <span class="price__data-text--mobile">Розовый фильтр</span>
-              <span class="price__data-cell--checked"></span>
+              <span class="price__data-text price__data-text--mobile">Розовый фильтр</span>
+              <span class="price__data-cell price__data-cell--checked"></span>
             </td>
             <td class="price__data">
-              <span class="price__data-text--mobile">Розовый фильтр</span>
-              <span class="price__data-cell--checked"></span>
-            </td>
-          </tr>
-          <tr class="price__row">
-            <td class="price__data--not-mobile">Смайлики</td>
-            <td class="price__data">
-              <span class="price__data-text--mobile">Смайлики</span>
-              <span class="price__data-cell--unchecked"></span>
-            </td>
-            <td class="price__data">
-              <span class="price__data-text--mobile">Смайлики</span>
-              <span class="price__data-cell--checked"></span>
-            </td>
-            <td class="price__data">
-              <span class="price__data-text--mobile">Смайлики</span>
-              <span class="price__data-cell--checked"></span>
+              <span class="price__data-text price__data-text--mobile">Розовый фильтр</span>
+              <span class="price__data-cell price__data-cell--checked"></span>
             </td>
           </tr>
           <tr class="price__row">
-            <td class="price__data--not-mobile">Комментарии</td>
+            <td class="price__data price__data--not-mobile">Смайлики</td>
             <td class="price__data">
-              <span class="price__data-text--mobile">Комментарии</span>
-              <span class="price__data-cell--unchecked"></span>
+              <span class="price__data-text price__data-text--mobile">Смайлики</span>
+              <span class="price__data-cell price__data-cell--unchecked"></span>
             </td>
             <td class="price__data">
-              <span class="price__data-text--mobile">Комментарии</span>
-              <span class="price__data-cell--unchecked"></span>
+              <span class="price__data-text price__data-text--mobile">Смайлики</span>
+              <span class="price__data-cell price__data-cell--checked"></span>
             </td>
             <td class="price__data">
-              <span class="price__data-text--mobile">Комментарии</span>
-              <span class="price__data-cell--checked"></span>
+              <span class="price__data-text price__data-text--mobile">Смайлики</span>
+              <span class="price__data-cell price__data-cell--checked"></span>
+            </td>
+          </tr>
+          <tr class="price__row">
+            <td class="price__data price__data--not-mobile">Комментарии</td>
+            <td class="price__data">
+              <span class="price__data-text price__data-text--mobile">Комментарии</span>
+              <span class="price__data-cell price__data-cell--unchecked"></span>
+            </td>
+            <td class="price__data">
+              <span class="price__data-text price__data-text--mobile">Комментарии</span>
+              <span class="price__data-cell price__data-cell--unchecked"></span>
+            </td>
+            <td class="price__data">
+              <span class="price__data-text price__data-text--mobile">Комментарии</span>
+              <span class="price__data-cell price__data-cell--checked"></span>
             </td>
           </tr>
         </table>
@@ -180,15 +180,15 @@
         <ul class="find-us__contacts-list">
           <li class="find-us__contacts-item">
             <h3 class="find-us__contacts-title">Звоните:</h3>
-            <a href="tel:+78125556666" class="find-us__contacts-link find-us__contacts--style">+7 (812) 555-66-66</a>
+            <a href="tel:+78125556666" class="find-us__contacts-link find-us__contacts-link--style" title="tel">+7 (812) 555-66-66</a>
           </li>
           <li class="find-us__contacts-item">
             <h3 class="find-us__contacts-title">Пишите:</h3>
-            <a href="mailto:mail@htmlacademy.ru" class="find-us__contacts-link find-us__contacts--style">mail@htmlacademy.ru</a>
+            <a href="mailto:mail@htmlacademy.ru" class="find-us__contacts-link find-us__contacts-link--style" title="email">mail@htmlacademy.ru</a>
           </li>
           <li class="find-us__contacts-item">
             <h3 class="find-us__contacts-title">Пиезжайте в гости:</h3>
-            <p class="find-us__contacts--style">ул. Большая<br>Конюшенная, 19/8</p>
+            <p class="find-us__contacts find-us__contacts--style">ул. Большая<br>Конюшенная, 19/8</p>
           </li>
         </ul>
         <div class="map"></div>
@@ -197,29 +197,29 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
-      <a class="page-footer__logo-mid">
+      <a class="page-footer__logo-tablet" title="logotype">
         <img src="https://via.placeholder.com/145x40" width="145" height="40" alt="Средний логотип">
       </a>
-      <ul class="page-footer__social-list social">
+      <ul class="page-footer__social-list">
         <li class="social__item">
-          <a href="https://twitter.com/" class="social__link social__link--twitter">
+          <a href="https://twitter.com/" class="social__link social__link--twitter" title="twitter">
             <img src="https://via.placeholder.com/48x48" width="48" height="48" alt="twitter">
           </a>
         </li>
         <li class="social__item">
-          <a href="https://facebook.com/" class="social__link social__link--facebook">
+          <a href="https://facebook.com/" class="social__link social__link--facebook" title="facebook">
             <img src="https://via.placeholder.com/48x48" width="48" height="48" alt="facebook">
           </a>
         </li>
         <li class="social__item">
-          <a href="https://youtube.com/" class="social__link social__link--youtube">
+          <a href="https://youtube.com/" class="social__link social__link--youtube" title="youtube">
             <img src="https://via.placeholder.com/48x48" width="48" height="48" alt="youtube">
           </a>
         </li>
       </ul>
-      <div class="page-footer__copyright copyright">
+      <div class="page-footer__copyright">
         <p class="copyright__text">Разработано</p>
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link" title="copyright">
           <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="HTML Academy Logo">
         </a>
       </div>
