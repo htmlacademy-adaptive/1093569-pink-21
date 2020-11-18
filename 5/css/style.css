@@ -38,6 +38,14 @@
   margin: 0 auto;
   padding: 0 0; }
 
+.page__body li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.page__body a {
+  text-decoration: none; }
+
 .visually-hidden {
   position: absolute;
   clip: rect(1px, 1px, 1px, 1px);
@@ -55,9 +63,6 @@
   line-height: 120%; }
 
 .advantages__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   background-color: #f2f2f2; }
 
 .advantages__item-title {
@@ -88,7 +93,6 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
-  text-decoration: none;
   color: white;
   border: 3px solid white;
   border-radius: 40px;
@@ -100,16 +104,10 @@
   color: white;
   line-height: 24px; }
 
-.find-us__contacts-list {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-
 .find-us__contacts-title {
   font-size: 18px; }
 
 .find-us__contacts-link {
-  text-decoration: none;
   font-size: 24px;
   color: #d22856;
   font-weight: lighter; }
