@@ -1,7 +1,11 @@
+@import "Globals/variables.scss";
+@import "Globals/mixins.scss";
+@import "Globals/fonts.scss";
 @import "Blocks/allPages/main-nav.scss";
 @import "Blocks/allPages/page-footer.scss";
 @import "Blocks/allPages/page-header.scss";
 @import "Blocks/allPages/page-main.scss";
+@import "Blocks/allPages/page.scss";
 @import "Blocks/catalog/catalog-gallery.scss";
 @import "Blocks/catalog/constuctor.scss";
 @import "Blocks/form/achievements.scss";
@@ -15,6 +19,3 @@
 @import "Blocks/indexDiR/preview.scss";
 @import "Blocks/indexDiR/price.scss";
 @import "Blocks/indexDiR/reviews.scss";
-@import "Globals/mixins.scss";
-@import "Globals/variables.scss";
-@import "Globals/fonts.scss";
