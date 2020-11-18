@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+  <base href="https://htmlacademy-adaptive.github.io/1093569-pink-21/5/">
+</head>
+<body class="page__body">
+<header class="page-header">
+  <a class="page-header__logo-mobile" title="logotype">
+    <img src="https://via.placeholder.com/74x23" width="74" height="23" alt="Маленький логотип">
+  </a>
+  <nav class="main-nav">
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="#" title="Home">Главная</a></li>
+        <li class="main-nav__item"><a href="#" title="Photo">Фотографии</a></li>
+        <li class="main-nav__item"><a href="#" title="Contest">Конкурс</a></li>
+        <li class="main-nav__item"><a href="#" title="HTML Academy">HTML Academy</a></li>
+      </ul>
+    </div>
+    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+  </nav>
+</header>
+
+<main class="page-main">
+
+  <h1 class="page-main__raffle-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+
+  <form action="https://echo.htmlacademy.ru" method="post" class="raffle-form">
+    <div class="raffle-form__wrapper">
+      <h2 class="raffle-form__rules">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h2>
+      <fieldset class="user-card">
+        <label for="user-surname" class="user-card__label raffle-form__label">Фамилия:</label>
+        <input type="text" id="user-surname" class="user-card__text-input" name="user-surname" placeholder="Укажите фамилию *" pattern="[A-Za-zА-Яа-яЁё]" maxlength="20" required>
+        <label for="user-name" class="user-card__label raffle-form__label">Имя:</label>
+        <input type="text" id="user-name" class="user-card__text-input" name="user-name" placeholder="Введите ваше имя *" pattern="[A-Za-zА-Яа-яЁё]" maxlength="20" required>
+        <label for="user-patronymic" class="user-card__label raffle-form__label">Отчество:</label>
+        <input type="text" id="user-patronymic" class="user-card__text-input" name="user-patronymic" placeholder="Ну и отчество тоже" pattern="[A-Za-zА-Яа-яЁё]" maxlength="20">
+      </fieldset>
+      <fieldset class="achievements">
+        <legend class="raffle-form__legend raffle-form__label">Ваши безбашенные достижения в путешествии</legend>
+        <input type="checkbox" id="selfie-with-shark" name="selfie-with-shark" class="achievements__checkbox" checked>
+        <label for="selfie-with-shark" class="achievements__label">Сделал селфи с акулой</label>
+        <input type="checkbox" id="strong-tan" name="strong-tan" class="achievements__checkbox" checked>
+        <label for="strong-tan" class="achievements__label">Обгорел на пляже</label>
+        <input type="checkbox" id="chuck-norris" name="chuck-norris" class="achievements__checkbox">
+        <label for="chuck-norris" class="achievements__label">Видел Чака Норриса</label>
+        <input type="checkbox" id="souvenirs" name="souvenirs" class="achievements__checkbox">
+        <label for="souvenirs" class="achievements__label">Накупил сувениров</label>
+        <input type="checkbox" id="kept-tower" name="kept-tower" class="achievements__checkbox" checked>
+        <label for="kept-tower" class="achievements__label">Удержал башню</label>
+        <input type="checkbox" id="destroyed-hotel" name="destroyed-hotel" class="achievements__checkbox">
+        <label for="destroyed-hotel" class="achievements__label">Разгромил отель</label>
+      </fieldset>
+      <fieldset class="user-contacts">
+        <label for="user-telephone" class="user-contacts__label  raffle-form__label">Номер телефона</label>
+        <input type="text" id="user-telephone" name="user-telephone" class="user-contacts__input"  pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" maxlength="16" placeholder="Номер, пожалуйста">
+        <label for="user-email" class="user-contacts__label  raffle-form__label"> Адрес почты</label>
+        <input type="text" id="user-email" name="user-email" class="user-contacts__text-input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" maxlength="25" placeholder="Введите почту *" required>
+      </fieldset>
+      <fieldset class="travel-soft">
+        <legend class="raffle-form__legend raffle-form__label">С каким приложением путешествовали?</legend>
+        <input type="radio" id="ios" name="os" class="travel-soft__radio" value="ios" checked>
+        <label for="ios" class="travel-soft__label">Pink для iOS</label>
+        <input type="radio" id="android" name="os" class="travel-soft__radio" value="android">
+        <label for="android" class="travel-soft__label">Pink на Android</label>
+        <input type="radio" id="windows" name="os" class="travel-soft__radio" value="windows">
+        <label for="windows" class="travel-soft__label">Windows Phone</label>
+      </fieldset>
+      <fieldset class="user-emotion">
+        <legend class="raffle-form__legend raffle-form__label">Опишите свои эмоции</legend>
+        <textarea cols="25" rows="8" class="user-emotion__text-area" name="user-emotion" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+      </fieldset>
+      <button class="raffle-form__button" type="submit">Отправить форму</button>
+      <small class="raffle-form__recommendation">* — обязательные поля</small>
+    </div>
+  </form>
+</main>
+
+<footer class="page-footer">
+  <div class="page-footer__wrapper">
+    <a class="page-footer__logo-tablet" title="logotype">
+      <img src="https://via.placeholder.com/145x40" width="145" height="40" alt="Средний логотип">
+    </a>
+    <ul class="page-footer__social">
+      <li class="page-footer__social-item">
+        <a href="https://twitter.com/" class="page-footer__social-link page-footer__social-link--twitter" title="twitter">
+          <img src="https://via.placeholder.com/48x48" width="48" height="48" alt="twitter">
+        </a>
+      </li>
+      <li class="page-footer__social-item">
+        <a href="https://facebook.com/" class="page-footer__social-link page-footer__social-link--facebook" title="facebook">
+          <img src="https://via.placeholder.com/48x48" width="48" height="48" alt="facebook">
+        </a>
+      </li>
+      <li class="page-footer__social-item">
+        <a href="https://youtube.com/" class="page-footer__social-link page-footer__social-link--youtube" title="youtube">
+          <img src="https://via.placeholder.com/48x48" width="48" height="48" alt="youtube">
+        </a>
+      </li>
+    </ul>
+    <div class="page-footer__copyright">
+      <p class="page-footer__copyright-text">Разработано</p>
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright-link" title="copyright">
+        <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="HTML Academy Logo">
+      </a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
