@@ -1,3 +1,27 @@
-.find-us {
-  font-family: "Open Sans";
+.find-us__contacts-list {
+  @include  list-style-reset;
+}
+
+.find-us__contacts-title {
+  font-size: 18px;
+}
+
+.find-us__contacts-link {
+  text-decoration: none;
+  font-size: 24px;
+  color: #d22856;
+  font-weight: lighter;
+}
+
+.find-us__contacts {
+  font-size: 24px;
+  color: #d22856;
+  font-weight: lighter;
+}
+
+.find-us__map {
+  width: 320px;
+  height: 200px;
+  background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
 }
