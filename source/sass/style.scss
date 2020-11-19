@@ -1,1 +1,22 @@
-// Начните писать стили здесь
+@import "Globals/normalize.scss";
+@import "Globals/variables.scss";
+@import "Globals/mixins.scss";
+@import "Globals/fonts.scss";
+@import "Globals/global.scss";
+@import "Blocks/main-nav.scss";
+@import "Blocks/page-footer.scss";
+@import "Blocks/page-header.scss";
+@import "Blocks/page-main.scss";
+@import "Blocks/catalog-gallery.scss";
+@import "Blocks/constuctor.scss";
+@import "Blocks/achievements.scss";
+@import "Blocks/raffle-form.scss";
+@import "Blocks/travel-soft.scss";
+@import "Blocks/user-card.scss";
+@import "Blocks/user-contacts.scss";
+@import "Blocks/advantages.scss";
+@import "Blocks/download-attachment.scss";
+@import "Blocks/find-us.scss";
+@import "Blocks/preview.scss";
+@import "Blocks/price.scss";
+@import "Blocks/reviews.scss";

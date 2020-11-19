@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -11,7 +12,7 @@
       </a>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
+          <ul class="main-nav__list main-nav__list--toggle">
             <li class="main-nav__item"><a href="#" title="Home">Главная</a></li>
             <li class="main-nav__item"><a href="#" title="Photo">Фотографии</a></li>
             <li class="main-nav__item"><a href="#" title="Contest">Конкурс</a></li>
@@ -28,21 +29,25 @@
     <section class="download-attachment">
       <div class="download-attachment__wrapper">
         <h2 class="visually-hidden">Блок ссылок для скачивания приложения под вашу операционную систему</h2>
-        <p class="download-attachment__slogan">Взгляните на жизнь иначе!</p>
-        <a class="download-attachment__button" href="https://www.apple.com/" target="_blank" title="download">Скачать приложение</a>
-        <a href="https://www.apple.com/" class="download-attachment__link" title="apple" aria-label="apple">
-          <img src="https://via.placeholder.com/47x56" width="47" height="56" alt="apple">
-        </a>
-        <a href="https://play.google.com/" class="download-attachment__link" title="android" aria-label="android">
-          <img src="https://via.placeholder.com/43x47" width="43" height="47" alt="android">
-        </a>
-        <a href="https://www.microsoft.com/ru-ru/store/apps/windows" class="download-attachment__link" title="windows" aria-label="windows">
-          <img src="https://via.placeholder.com/44x41" width="44" height="41" alt="windows">
-        </a>
-        <p class="download-attachment__annotation">
-          Доступно для iPhone, iPad, Android,<br>
-          Windows Phone, OS X, Windows 8
-        </p>
+        <div class="download-attachment__preview">
+          <p class="download-attachment__slogan">Взгляните на жизнь иначе!</p>
+        </div>
+        <div class="download-attachment__buttons">
+          <a class="download-attachment__button" href="https://www.apple.com/" target="_blank" title="download">Скачать приложение</a>
+          <a href="https://www.apple.com/" class="download-attachment__link" title="apple" aria-label="apple">
+            <img src="https://via.placeholder.com/47x56" width="47" height="56" alt="apple">
+          </a>
+          <a href="https://play.google.com/" class="download-attachment__link" title="android" aria-label="android">
+            <img src="https://via.placeholder.com/43x47" width="43" height="47" alt="android">
+          </a>
+          <a href="https://www.microsoft.com/ru-ru/store/apps/windows" class="download-attachment__link" title="windows" aria-label="windows">
+            <img src="https://via.placeholder.com/44x41" width="44" height="41" alt="windows">
+          </a>
+          <p class="download-attachment__annotation">
+            Доступно для iPhone, iPad, Android,<br>
+            Windows Phone, OS X, Windows 8
+          </p>
+        </div>
       </div>
     </section>
 
@@ -52,7 +57,7 @@
           <h2 class="visually-hidden">Список преимуществ нашего приложения</h2>
           <dl class="advantages__offer">
             <dt class="advantages__offer-question">Устали от серости мегаполиса?</dt>
-            <dd class="advantages__offer-answer">Нам есть, что вам<br>предложить!</dd>
+            <dd class="advantages__offer-answer">Нам есть, что вам предложить!</dd>
           </dl>
         </header>
         <ul class="advantages__list">
@@ -103,15 +108,15 @@
         <table class="price__table">
           <tr class="price__row">
             <td class="price__data price__data--hidden"></td>
-            <td class="price__data">
+            <td class="price__data price__data--rubber">
               <h3 class="price__data-title">База</h3>
               <p class="price__data-cost">1,99 USD</p>
             </td>
-            <td class="price__data">
+            <td class="price__data price__data--rubber">
               <h3 class="price__data-title price__data-title--hit">Стандарт</h3>
               <p class="price__data-cost">3,99 USD</p>
             </td>
-            <td class="price__data">
+            <td class="price__data price__data--rubber">
               <h3 class="price__data-title">Анлим</h3>
               <p class="price__data-cost">9,99 USD</p>
             </td>
@@ -180,18 +185,18 @@
         <ul class="find-us__contacts-list">
           <li class="find-us__contacts-item">
             <h3 class="find-us__contacts-title">Звоните:</h3>
-            <a href="tel:+78125556666" class="find-us__contacts-link find-us__contacts-link--style" title="tel">+7 (812) 555-66-66</a>
+            <a href="tel:+78125556666" class="find-us__contacts-link" title="tel">+7 (812) 555-66-66</a>
           </li>
           <li class="find-us__contacts-item">
             <h3 class="find-us__contacts-title">Пишите:</h3>
-            <a href="mailto:mail@htmlacademy.ru" class="find-us__contacts-link find-us__contacts-link--style" title="email">mail@htmlacademy.ru</a>
+            <a href="mailto:mail@htmlacademy.ru" class="find-us__contacts-link" title="email">mail@htmlacademy.ru</a>
           </li>
           <li class="find-us__contacts-item">
             <h3 class="find-us__contacts-title">Пиезжайте в гости:</h3>
-            <p class="find-us__contacts find-us__contacts--style">ул. Большая<br>Конюшенная, 19/8</p>
+            <p class="find-us__contacts">ул. Большая<br>Конюшенная, 19/8</p>
           </li>
         </ul>
-        <div class="map"></div>
+        <div class="find-us__map"></div>
       </div>
     </section>
   </main>
@@ -207,7 +212,7 @@
             </a>
           </li>
           <li class="page-footer__social-item">
-            <a href="https://facebook.com/" class="page-footer__social-link ppage-footer__social-link--facebook" title="facebook">
+            <a href="https://facebook.com/" class="page-footer__social-link page-footer__social-link--facebook" title="facebook">
               <img src="https://via.placeholder.com/48x48" width="48" height="48" alt="facebook">
             </a>
           </li>
