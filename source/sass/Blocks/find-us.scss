@@ -1,0 +1,25 @@
+.find-us {
+  &__contacts-title {
+    font-size: 18px;
+  }
+
+  &__contacts-link {
+    font-size: 24px;
+    color: #d22856;
+    font-weight: lighter;
+  }
+
+  &__contacts {
+    font-size: 24px;
+    color: #d22856;
+    font-weight: lighter;
+  }
+
+  &__map {
+    width: 320px;
+    height: 200px;
+    background-image: url("../img/map.jpg");
+    background-repeat: no-repeat;
+  }
+}
+

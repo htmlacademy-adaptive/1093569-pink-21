@@ -7,8 +7,10 @@
   padding: 0 0;
 }
 
-.page__body li {
-  @include list-style-reset;
+.page__body ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .page__body a {

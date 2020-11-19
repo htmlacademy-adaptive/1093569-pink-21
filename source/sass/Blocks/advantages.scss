@@ -1,0 +1,25 @@
+.advantages {
+  &__offer-question,
+  &__offer-answer {
+    margin: 0 auto;
+    font-weight: lighter;
+    font-size: 24px;
+    line-height: 120%;
+  }
+
+  &__list {
+    background-color: #f2f2f2;
+  }
+
+  &__item-title {
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  &__item-description {
+    font-size: 14px;
+  }
+}
+

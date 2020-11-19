@@ -1,0 +1,19 @@
+.reviews {
+  &__author {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+    font-style: normal;
+  }
+
+  &__author-info {
+    display: none;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 30px;
+  }
+}
+
