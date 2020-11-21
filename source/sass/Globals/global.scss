@@ -1,4 +1,7 @@
 .page__body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  grid-template-columns: minmax(300px, auto);
   position: relative;
   color: $brand-font-color;
   background-color: $brand-background-color;
