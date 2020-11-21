@@ -1,1 +1,24 @@
-//zaglushka
+.page-footer {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 284px;
+    align-items: center;
+
+    @media (min-width: $tablet-width) {
+      flex-direction: row;
+      min-height: 127px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-height: 197px;
+    }
+  }
+
+  &__social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

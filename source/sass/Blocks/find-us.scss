@@ -1,25 +1,88 @@
 .find-us {
   &__contacts-title {
     font-size: 18px;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__offer {
+    text-align: center;
+    font-size: 24px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 50px;
+    }
+  }
+
+  &__offer-answer,
+  &__offer-question {
+    padding: 0;
+    margin: 0;
+  }
+
+  &__contacts-list {
+    display: grid;
+    grid-template-rows: minmax(40px, auto) minmax(40px, auto) minmax(40px, auto);
+    gap: 30px;
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+    }
+  }
+
+  &__contacts-item:last-child {
+    @media (min-width: $tablet-width) {
+      grid-column: 1/-1;
+      grid-row: 2/3;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-row: 1/-1;
+      grid-column: 3/4;
+    }
   }
 
   &__contacts-link {
     font-size: 24px;
     color: #d22856;
     font-weight: lighter;
+    text-decoration: none;
+    cursor: pointer;
   }
 
   &__contacts {
     font-size: 24px;
     color: #d22856;
     font-weight: lighter;
+    margin: 0;
+    padding: 0;
   }
 
   &__map {
-    width: 320px;
+    margin: 0;
+    width: 100%;
     height: 200px;
-    background-image: url("../img/map.jpg");
+    background-image: url("../img/map.png");
     background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-width: $tablet-width) {
+      height: 374px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 502px;
+    }
   }
 }
-
