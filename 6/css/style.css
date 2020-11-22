@@ -303,7 +303,6 @@ template {
   display: grid;
   grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
   grid-template-rows: min-content 1fr min-content;
-  grid-template-columns: minmax(300px, auto);
   position: relative;
   color: #283645;
   background-color: #ffffff;
@@ -621,8 +620,12 @@ template {
 .price {
   background-image: url("../img/grey-background.png");
   background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden; }
+  background-size: cover; }
+  .price__wrapper {
+    overflow-x: hidden; }
+    @media (max-width: 320px) {
+      .price__wrapper {
+        max-width: 320px; } }
   .price__table {
     border-collapse: collapse;
     margin: 0 auto; }
