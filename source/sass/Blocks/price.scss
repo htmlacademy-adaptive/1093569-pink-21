@@ -2,7 +2,14 @@
   background-image: url("../img/grey-background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden;
+
+  &__wrapper {
+    overflow-x: hidden;
+
+    @media (max-width: $mobile-width) {
+      max-width: 320px;
+    }
+  }
 
   &__table {
     border-collapse: collapse;
