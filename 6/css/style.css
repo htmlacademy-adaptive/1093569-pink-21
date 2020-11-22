@@ -361,7 +361,7 @@ template {
 
 .main-nav__item-link {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 62px;
   color: white;
   text-transform: uppercase; }
@@ -391,7 +391,7 @@ template {
 .page-header {
   font-size: 18px;
   line-height: 32px;
-  font-weight: bold; }
+  font-weight: 700; }
   .page-header__wrapper {
     display: flex;
     flex-direction: column;
@@ -434,7 +434,7 @@ template {
     text-align: center; }
   .advantages__offer-question, .advantages__offer-answer {
     margin: 0 auto;
-    font-weight: lighter;
+    font-weight: 300;
     font-size: 24px;
     line-height: 120%; }
   @media (min-width: 960px) {
@@ -450,7 +450,7 @@ template {
         text-align: center; } }
   .advantages__item-title {
     color: black;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 18px;
     line-height: 24px; }
   .advantages__item-description {
@@ -491,14 +491,14 @@ template {
     width: 280px; }
   .download-attachment__slogan {
     font-size: 24px;
-    font-weight: lighter;
+    font-weight: 300;
     line-height: 120%;
     color: white;
     margin: 0 auto; }
   .download-attachment__button {
     display: block;
     text-align: center;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 18px;
     line-height: 18px;
     color: white;
@@ -515,7 +515,7 @@ template {
     align-items: center; }
   .download-attachment__annotation {
     font-size: 14px;
-    font-weight: lighter;
+    font-weight: 300;
     color: white;
     line-height: 24px; }
 
@@ -565,14 +565,14 @@ template {
 .find-us__contacts-link {
   font-size: 24px;
   color: #d22856;
-  font-weight: lighter;
+  font-weight: 300;
   text-decoration: none;
   cursor: pointer; }
 
 .find-us__contacts {
   font-size: 24px;
   color: #d22856;
-  font-weight: lighter;
+  font-weight: 300;
   margin: 0;
   padding: 0; }
 
@@ -600,7 +600,7 @@ template {
       background-color: #f2f2f2; } }
   .preview__title {
     font-size: 30px;
-    font-weight: bold;
+    font-weight: 700;
     margin: 0; }
   .preview__text {
     font-size: 14px;
@@ -672,14 +672,14 @@ template {
     padding: 0;
     color: white;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 30px; }
   .price__header-cost {
     margin: 0;
     padding: 0;
     color: white;
     font-size: 18px;
-    font-weight: lighter;
+    font-weight: 300;
     line-height: 30px; }
   .price__toggles {
     text-align: center; }
@@ -705,7 +705,7 @@ template {
   order: 0;
   color: black;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 30px;
   font-style: normal; }
   @media (min-width: 660px) {
@@ -721,7 +721,7 @@ template {
   @media (min-width: 660px) {
     .reviews__author-info {
       display: block;
-      font-weight: normal;
+      font-weight: 400;
       font-size: 14px; } }
   @media (min-width: 960px) {
     .reviews__author-info {
