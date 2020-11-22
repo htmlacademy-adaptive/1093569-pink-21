@@ -41,7 +41,7 @@
 
   &__slogan {
     font-size: 24px;
-    font-weight: lighter;
+    font-weight: 300;
     line-height: 120%;
     color: white;
     margin: 0 auto;
@@ -50,7 +50,7 @@
   &__button {
     display: block;
     text-align: center;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 18px;
     line-height: 18px;
     color: white;
@@ -71,7 +71,7 @@
 
   &__annotation {
     font-size: 14px;
-    font-weight: lighter;
+    font-weight: 300;
     color: white;
     line-height: 24px;
   }
