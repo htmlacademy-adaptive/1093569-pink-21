@@ -1,19 +1,51 @@
 .reviews {
-  &__author {
-    color: black;
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 30px;
-    font-style: normal;
+  &__wrapper {
+    text-align: center;
+    align-items: center;
   }
 
-  &__author-info {
-    display: none;
+  &__item {
+    display: flex;
+    flex-direction: column;
   }
 
   &__text {
     font-size: 14px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 18px;
+    }
+  }
+
+  &__author {
+    order: 0;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
     line-height: 30px;
+    font-style: normal;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      order: 1;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 24px;
+    }
+  }
+
+  &__author-info {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      font-weight: 400;
+      font-size: 14px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 18px;
+    }
   }
 }
-

@@ -1,3 +1,37 @@
 .preview {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #f2f2f2;
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 24px;
+
+    @media (min-width: $desktop-width) {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+
+  &__show-more {
+    font-size: 14px;
+    color: #d22856;
+    text-decoration: underline;
+
+    @media (min-width: $desktop-width) {
+      font-size: 18px;
+    }
+  }
 }

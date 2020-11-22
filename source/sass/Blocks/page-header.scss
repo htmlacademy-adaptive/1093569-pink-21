@@ -1,6 +1,51 @@
 .page-header {
-  background-color: $black-opacity30;
-  position: absolute;
-  width: 320px;
-  min-height: 66px;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    background-color: #283645;
+
+    @media (min-width: $desktop-width) {
+      flex-direction: row;
+      background-color: $black-opacity30;
+      justify-content: space-between;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 69px;
+
+    @media (min-width: $tablet-width) {
+      min-height: 109px;
+    }
+  }
+
+  &__logo-mobile {
+    margin-left: 20px;
+
+    @media (min-width: $desktop-width) {
+      margin-left: 130px;
+    }
+  }
+
+  &__toggle {
+    margin-right: 23px;
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &__wrapper-toggle {
+    background-color: $black-opacity30;
+  }
 }

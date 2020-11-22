@@ -1,10 +1,12 @@
 .page__body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
   position: relative;
   color: $brand-font-color;
   background-color: $brand-background-color;
   font-family: "Open Sans", "Arial Black", sans-serif;
+  height: 100%;
   margin: 0 auto;
-  padding: 0 0;
 }
 
 .page__body ul {
@@ -13,16 +15,32 @@
   padding: 0;
 }
 
-.page__body a {
-  text-decoration: none;
+.container-center {
+  width: $mobile-width;
+  margin: 0 auto;
+  min-height: inherit;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
 }
 
 .visually-hidden {
   position: absolute;
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0;
-  border: 0;
-  height: 1px;
   width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }

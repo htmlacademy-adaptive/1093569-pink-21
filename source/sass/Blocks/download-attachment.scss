@@ -1,37 +1,78 @@
 .download-attachment {
-  &__preview {
+  @media (max-width: $mobile-width) {
     background-image: url("../img/back-mobile.png");
-    background-repeat: no-repeat;
-    width: 320px;
-    min-height: 462px;
+    background-size: 100%;
+    background-position: top;
+  }
+  background-image: url("../img/back-tablet.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 733px;
+  background-color: #283645;
+
+  @media (min-width: $tablet-width) {
+    min-height: 729px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/back-desktop.png");
+    min-height: 853px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: inherit;
+    text-align: center;
+    align-items: center;
+
+    @media (min-width: $tablet-width) {
+      justify-content: center;
+      align-items: start;
+    }
+  }
+
+  &__preview {
+    margin-top: 95px;
+    width: 280px;
   }
 
   &__slogan {
     font-size: 24px;
-    font-weight: lighter;
+    font-weight: 300;
     line-height: 120%;
     color: white;
-  }
-
-  &__buttons {
-    background-color: #1d2631;
+    margin: 0 auto;
   }
 
   &__button {
-    font-weight: bold;
+    display: block;
+    text-align: center;
+    font-weight: 700;
     font-size: 18px;
     line-height: 18px;
     color: white;
+    text-decoration: none;
+    cursor: pointer;
     border: 3px solid white;
     border-radius: 40px;
-    padding: 21px 38px;
+    padding: 15px 0;
+    width: 276px;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 35px;
+    align-items: center;
   }
 
   &__annotation {
     font-size: 14px;
-    font-weight: lighter;
+    font-weight: 300;
     color: white;
     line-height: 24px;
   }
 }
-

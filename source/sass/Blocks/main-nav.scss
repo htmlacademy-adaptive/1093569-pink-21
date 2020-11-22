@@ -1,3 +1,35 @@
-.main-nav__list--toggle {
-  display: none;
+.main-nav {
+  &__list {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $desktop-width) {
+      flex-direction: row;
+      min-height: 109px;
+      align-items: center;
+    }
+  }
+
+  &__item {
+    text-align: center;
+    min-height: 63px;
+    box-shadow: 0 1px 0 #000000,
+      inset 0 1px 0 rgba(255, 255, 255, 0.15);
+
+    @media (min-width: $desktop-width) {
+      box-shadow: none;
+    }
+  }
+
+  &__item-link {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 62px;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  &__list--toggle {
+    display: none;
+  }
 }

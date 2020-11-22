@@ -1,19 +1,42 @@
 .advantages {
+  background-image: url("../img/grey-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__header {
+    min-height: 250px;
+    text-align: center;
+  }
+
   &__offer-question,
   &__offer-answer {
     margin: 0 auto;
-    font-weight: lighter;
+    font-weight: 300;
     font-size: 24px;
     line-height: 120%;
   }
 
   &__list {
-    background-color: #f2f2f2;
+    @media (min-width: $desktop-width) {
+      display: flex;
+    }
+  }
+
+  &__item {
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      text-align: start;
+    }
+
+    @media (min-width: $desktop-width) {
+      text-align: center;
+    }
   }
 
   &__item-title {
     color: black;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 18px;
     line-height: 24px;
   }
@@ -22,4 +45,3 @@
     font-size: 14px;
   }
 }
-
