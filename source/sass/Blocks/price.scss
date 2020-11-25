@@ -3,22 +3,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  &__wrapper {
-    overflow-x: hidden;
-
-    @media (max-width: $mobile-width) {
-      max-width: 320px;
-    }
-  }
-
   &__table {
     border-collapse: collapse;
-    margin: 0 auto;
-
-    @media (max-width: $mobile-width) {
-      width: 840px;
-      transform: translateX(-260px);
-    }
+    margin-left: 50%;
+    transform: translateX(-50%);
+    min-width: 840px;
   }
 
   &__data {

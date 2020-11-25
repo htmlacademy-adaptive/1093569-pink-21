@@ -1,15 +1,19 @@
 .page-header {
+  position: relative;
   font-size: 18px;
   line-height: 32px;
   font-weight: 700;
+  background-color: #283645;
+  width: 100%;
+  margin-bottom: -66px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: -110px;
+  }
 
   &__wrapper {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    background-color: #283645;
 
     @media (min-width: $desktop-width) {
       flex-direction: row;
@@ -25,7 +29,7 @@
     min-height: 69px;
 
     @media (min-width: $tablet-width) {
-      min-height: 109px;
+      min-height: 110px;
     }
   }
 
@@ -37,15 +41,11 @@
     }
   }
 
-  &__toggle {
+  &__button-toggle {
     margin-right: 23px;
 
     @media (min-width: $desktop-width) {
       display: none;
     }
-  }
-
-  &__wrapper-toggle {
-    background-color: $black-opacity30;
   }
 }

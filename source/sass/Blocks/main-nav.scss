@@ -12,7 +12,7 @@
 
   &__item {
     text-align: center;
-    min-height: 63px;
+    min-height: 64px;
     box-shadow: 0 1px 0 #000000,
       inset 0 1px 0 rgba(255, 255, 255, 0.15);
 
@@ -27,9 +27,15 @@
     line-height: 62px;
     color: white;
     text-transform: uppercase;
+    font-family: "Open Sans", "Arial Black", sans-serif;
+    text-decoration: none;
+
+    @media (min-width: $desktop-width) {
+      font-weight: 400;
+    }
   }
 
-  &__list--toggle {
-    display: none;
-  }
+  //&__list--toggle {
+  //  display: none;
+  //}
 }
