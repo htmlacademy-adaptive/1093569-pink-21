@@ -4,6 +4,14 @@
   background-size: cover;
   background-position: 0 104px;
 
+  @media (min-width: $tablet-width) {
+    background-position: 0 190px;
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
   &__header {
     min-height: 250px;
     text-align: center;
@@ -13,6 +21,10 @@
     @include text-reset;
 
     padding-top: 41px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 45px;
+    }
   }
 
   &__offer-question,
@@ -21,16 +33,31 @@
     font-weight: 300;
     font-size: 24px;
     line-height: 120%;
+
+    @media (min-width: $tablet-width) {
+      font-size: 40px;
+      line-height: 133%;
+    }
   }
 
   &__offer-answer {
     padding-top: 31px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 2px;
+    }
   }
 
   &__list {
     @include list-reset;
 
     margin-top: 48px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 64px;
+      margin-left: 310px;
+      padding-bottom: 42px;
+    }
 
     @media (min-width: $desktop-width) {
       display: flex;
@@ -39,6 +66,11 @@
 
   &__item {
     text-align: center;
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+      flex-direction: column;
+    }
 
     &--friends {
       &::after {
@@ -49,6 +81,24 @@
         background-image: url("../img/phone-smile-mobile.png");
         background-repeat: no-repeat;
         margin: 40px auto 0;
+
+        @media (min-width: $tablet-width) {
+          margin: 0;
+          position: absolute;
+          width: 268px;
+          height: 481px;
+          background-image: url("../img/phone-smile-tablet.png");
+          left: 0;
+          top: 243px;
+        }
+
+        @media (min-width: $desktop-width) {
+          position: static;
+          width: 300px;
+          height: 304px;
+          background-image: url("../img/phone-smile-desktop.png");
+          order: 1;
+        }
       }
     }
 
@@ -69,6 +119,15 @@
     font-size: 18px;
     line-height: 22px;
     margin-top: 31px;
+
+    @media (min-width: $tablet-width) {
+      line-height: 21px;
+      margin-top: 36px;
+    }
+
+    @media (min-width: $desktop-width) {
+      order: 2;
+    }
   }
 
   &__item-description {
@@ -77,5 +136,17 @@
     font-size: 14px;
     margin-top: 14px;
     line-height: 24px;
+
+    @media (min-width: $desktop-width) {
+      order: 3;
+    }
+  }
+
+  &__item-title-br {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: inline;
+    }
   }
 }
