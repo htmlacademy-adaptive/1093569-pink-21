@@ -1,5 +1,7 @@
 .main-nav {
   &__list {
+    @include list-reset;
+
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;

@@ -2,10 +2,17 @@
   background-image: url("../img/grey-background.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 0 104px;
 
   &__header {
     min-height: 250px;
     text-align: center;
+  }
+
+  &__offer {
+    @include text-reset;
+
+    padding-top: 41px;
   }
 
   &__offer-question,
@@ -16,7 +23,15 @@
     line-height: 120%;
   }
 
+  &__offer-answer {
+    padding-top: 31px;
+  }
+
   &__list {
+    @include list-reset;
+
+    margin-top: 48px;
+
     @media (min-width: $desktop-width) {
       display: flex;
     }
@@ -24,6 +39,18 @@
 
   &__item {
     text-align: center;
+
+    &--friends {
+      &::after {
+        content: "";
+        display: block;
+        width: 157px;
+        height: 277px;
+        background-image: url("../img/phone-smile-mobile.png");
+        background-repeat: no-repeat;
+        margin: 40px auto 0;
+      }
+    }
 
     @media (min-width: $tablet-width) {
       text-align: start;
@@ -35,13 +62,20 @@
   }
 
   &__item-title {
+    @include text-reset;
+
     color: black;
     font-weight: 700;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 22px;
+    margin-top: 31px;
   }
 
   &__item-description {
+    @include text-reset;
+
     font-size: 14px;
+    margin-top: 14px;
+    line-height: 24px;
   }
 }

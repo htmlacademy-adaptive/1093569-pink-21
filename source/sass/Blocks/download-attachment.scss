@@ -150,7 +150,7 @@
     width: $mobile-width;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 47px;
+    padding-top: 28px;
     box-sizing: border-box;
     margin: 0 auto;
 
@@ -229,11 +229,13 @@
     color: #ffffff;
     line-height: 24px;
     padding-top: 2px;
+    padding-bottom: 18px;
 
     @media (min-width: $tablet-width) {
       font-size: 18px;
       padding-top: 11px;
       padding-right: 20px;
+      padding-bottom: 0;
     }
 
     @media (min-width: $desktop-width) {
