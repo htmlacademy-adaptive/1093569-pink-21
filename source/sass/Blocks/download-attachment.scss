@@ -9,7 +9,7 @@
   background-position: center;
   background-size: cover;
   min-height: 733px;
-  background-color: #283645;
+  background-color: #1d2631;
 
   @media (min-width: $tablet-width) {
     min-height: 729px;
@@ -33,6 +33,7 @@
 
     @media (min-width: $desktop-width) {
       width: $desktop-width;
+      padding: 0;
     }
   }
 
@@ -55,15 +56,66 @@
     margin-top: 90px;
     width: 280px;
 
+    @media (min-width: $tablet-width) {
+      margin-top: 106px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 102px;
+    }
+
     &::after {
       content: "";
       position: absolute;
       width: 320px;
       height: 286px;
-      background-image: url("../img/phone-mobile.png");
+      background-image: url("../img/hand.png");
       background-repeat: no-repeat;
+      background-size: 510px 314px;
+      background-position-x: -173px;
       top: 86px;
       left: -20px;
+
+      @media (min-width: $tablet-width) {
+        width: 660px;
+        height: 545px;
+        background-size: 884px 545px;
+        top: -20px;
+        left: 45px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 1050px;
+        height: 645px;
+        background-size: cover;
+        top: -2px;
+        left: 199px;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 111px;
+      height: 197px;
+      background-image: url("../img/screen.png");
+      background-size: cover;
+      left: 84px;
+      top: 119px;
+
+      @media (min-width: $tablet-width) {
+        width: 195px;
+        height: 346px;
+        left: 352px;
+        top: 34px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 230px;
+        height: 408px;
+        top: 63px;
+        left: 596px;
+      }
     }
   }
 
@@ -71,8 +123,27 @@
     font-size: 24px;
     font-weight: 300;
     line-height: 120%;
-    color: white;
+    color: #ffffff;
     margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      font-size: 40px;
+      padding-left: 19px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 50px;
+      padding-left: 40px;
+      line-height: 68px;
+    }
+  }
+
+  &__slogan-br {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: inline;
+    }
   }
 
   &__buttons-wrapper {
@@ -82,15 +153,32 @@
     padding-top: 47px;
     box-sizing: border-box;
     margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 30px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+    }
   }
 
   &__buttons {
-    background-color: #283645;
+    background-color: #1d2631;
     width: 100%;
 
     @media (min-width: $tablet-width) {
       background-color: transparent;
       width: auto;
+      height: auto;
+      z-index: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 10px;
+      margin-top: 36px;
     }
   }
 
@@ -100,26 +188,57 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 18px;
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     cursor: pointer;
     border: 3px solid white;
     border-radius: 40px;
     padding: 15px 0;
-    width: 276px;
+
+    @media (min-width: $tablet-width) {
+      width: 294px;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 21px;
+    }
   }
 
   &__links {
     display: flex;
-    justify-content: space-around;
-    margin-top: 35px;
+    justify-content: space-evenly;
+    padding-top: 34px;
     align-items: center;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 47px;
+      padding-left: 12px;
+      padding-right: 37px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 70px;
+      padding-left: 10px;
+      padding-right: 31px;
+    }
   }
 
   &__annotation {
     font-size: 14px;
     font-weight: 300;
-    color: white;
+    color: #ffffff;
     line-height: 24px;
+    padding-top: 2px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 18px;
+      padding-top: 11px;
+      padding-right: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 28px;
+      padding-left: 3px;
+    }
   }
 }
