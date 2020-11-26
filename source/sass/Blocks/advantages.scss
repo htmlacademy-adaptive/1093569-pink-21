@@ -8,6 +8,10 @@
     background-position: 0 190px;
   }
 
+  @media (min-width: $desktop-width) {
+    background-position: 0 293px;
+  }
+
   &__wrapper {
     position: relative;
   }
@@ -25,6 +29,10 @@
     @media (min-width: $tablet-width) {
       padding-top: 45px;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 64px;
+    }
   }
 
   &__offer-question,
@@ -37,6 +45,10 @@
     @media (min-width: $tablet-width) {
       font-size: 40px;
       line-height: 133%;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 50px;
     }
   }
 
@@ -54,53 +66,20 @@
     margin-top: 48px;
 
     @media (min-width: $tablet-width) {
-      margin-top: 64px;
-      margin-left: 310px;
+      margin: 64px 0 0 310px;
       padding-bottom: 42px;
     }
 
     @media (min-width: $desktop-width) {
+      margin: 59px 0 0;
       display: flex;
+      justify-content: space-around;
+      padding: 0;
     }
   }
 
   &__item {
     text-align: center;
-
-    @media (min-width: $desktop-width) {
-      display: flex;
-      flex-direction: column;
-    }
-
-    &--friends {
-      &::after {
-        content: "";
-        display: block;
-        width: 157px;
-        height: 277px;
-        background-image: url("../img/phone-smile-mobile.png");
-        background-repeat: no-repeat;
-        margin: 40px auto 0;
-
-        @media (min-width: $tablet-width) {
-          margin: 0;
-          position: absolute;
-          width: 268px;
-          height: 481px;
-          background-image: url("../img/phone-smile-tablet.png");
-          left: 0;
-          top: 243px;
-        }
-
-        @media (min-width: $desktop-width) {
-          position: static;
-          width: 300px;
-          height: 304px;
-          background-image: url("../img/phone-smile-desktop.png");
-          order: 1;
-        }
-      }
-    }
 
     @media (min-width: $tablet-width) {
       text-align: start;
@@ -108,6 +87,67 @@
 
     @media (min-width: $desktop-width) {
       text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &::after {
+      content: "";
+      display: none;
+      width: 157px;
+      height: 277px;
+      background-repeat: no-repeat;
+      margin: 40px auto 0;
+
+      @media (min-width: $tablet-width) {
+        margin: 0;
+        position: absolute;
+        width: 268px;
+        height: 481px;
+        left: 0;
+        top: 243px;
+      }
+
+      @media (min-width: $desktop-width) {
+        position: static;
+        width: 309px;
+        height: 301px;
+        order: 1;
+        margin-bottom: 20px;
+      }
+    }
+
+    &--mood {
+      &::after {
+        @media (min-width: $desktop-width) {
+          background-image: url("../img/phone-wb-desktop.png");
+          display: block;
+        }
+      }
+    }
+
+    &--world {
+      &::after {
+        @media (min-width: $desktop-width) {
+          background-image: url("../img/phone-pink-desktop.png");
+          display: block;
+        }
+      }
+    }
+
+    &--friends {
+      &::after {
+        display: block;
+        background-image: url("../img/phone-smile-mobile.png");
+
+        @media (min-width: $tablet-width) {
+          background-image: url("../img/phone-smile-tablet.png");
+        }
+
+        @media (min-width: $desktop-width) {
+          background-image: url("../img/phone-smile-desktop.png");
+        }
+      }
     }
   }
 
@@ -126,6 +166,8 @@
     }
 
     @media (min-width: $desktop-width) {
+      font-size: 30px;
+      line-height: 30px;
       order: 2;
     }
   }
@@ -138,15 +180,30 @@
     line-height: 24px;
 
     @media (min-width: $desktop-width) {
+      font-size: 18px;
+      line-height: 30px;
       order: 3;
+      margin-top: 23px;
     }
   }
 
   &__item-title-br {
     display: none;
 
-    @media (min-width: $tablet-width) {
-      display: inline;
+    &--tablet {
+      @media (min-width: $tablet-width) {
+        display: inline;
+      }
+
+      @media (min-width: $desktop-width) {
+        display: none;
+      }
+    }
+
+    &--desktop {
+      @media (min-width: $desktop-width) {
+        display: inline;
+      }
     }
   }
 }
