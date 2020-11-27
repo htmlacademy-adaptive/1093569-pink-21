@@ -1,6 +1,5 @@
 .preview {
   display: none;
-  position: relative;
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -10,18 +9,31 @@
     background-color: #f2f2f2;
   }
 
-  &::after {
-    content: url("../img/timer.svg");
-    position: absolute;
-    width: 238px;
-    height: 276px;
-    top: -42px;
-    left: 20px;
-  }
-
   &__wrapper {
-    margin-top: 95px;
-    margin-left: 310px;
+    position: relative;
+    padding: 95px 0 40px 310px;
+
+    @media (min-width: $desktop-width) {
+      padding: 159px 0 116px 380px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/timer-tablet.svg");
+      width: 238px;
+      height: 276px;
+      top: 53px;
+      left: 0;
+
+      @media (min-width: $desktop-width) {
+        background-image: url("../img/timer-desktop.svg");
+        width: 298px;
+        height: 345px;
+        top: 67px;
+        left: 11px;
+      }
+    }
   }
 
   &__title {
@@ -41,6 +53,7 @@
     @media (min-width: $desktop-width) {
       font-size: 18px;
       line-height: 30px;
+      margin-top: 22px;
     }
   }
 
@@ -53,6 +66,20 @@
 
     @media (min-width: $desktop-width) {
       font-size: 18px;
+      margin-top: 36px;
+    }
+  }
+
+  &__br-tablet {
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &__br-desktop {
+    display: none;
+    @media (min-width: $desktop-width) {
+      display: inline;
     }
   }
 }
