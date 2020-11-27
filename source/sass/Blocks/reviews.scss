@@ -2,15 +2,18 @@
   &__wrapper {
     text-align: center;
     align-items: center;
+    padding-top: 41px;
   }
 
   &__item {
+    @include text-reset;
     display: flex;
     flex-direction: column;
   }
 
   &__text {
     font-size: 14px;
+    line-height: 30px;
 
     @media (min-width: $tablet-width) {
       font-size: 18px;

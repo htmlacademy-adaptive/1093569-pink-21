@@ -17,10 +17,92 @@
     position: absolute;
   }
 
+  &__button-toggle {
+    position: relative;
+    margin-right: 20px;
+    padding: 0;
+    width: 23px;
+    height: 23px;
+    background-color: transparent;
+    border: none;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 29px;
+      height: 3px;
+      right: -3px;
+      top: 10px;
+      transform: rotate(45deg);
+      background-color: #ffffff;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 29px;
+      height: 3px;
+      right: -3px;
+      top: 10px;
+      transform: rotate(-45deg);
+      background-color: #ffffff;
+    }
+
+    &:hover::before,
+    &:hover::after {
+      background-color: #d22856;
+    }
+
+    &:active::before,
+    &:active::after {
+      background-color: fade-out(#d22856, 0.3);
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
   &--close {
     background-color: $black-opacity30;
     margin-bottom: 0;
     position: absolute;
+
+    .page-header__logo {
+      min-height: 64px;
+
+      @media (min-width: $tablet-width) {
+        min-height: 108px;
+      }
+    }
+
+    .page-header__button-toggle {
+      width: 50px;
+      height: 24px;
+
+      &::before {
+        width: 50px;
+        height: 5px;
+        transform: rotate(0deg);
+        left: 0;
+        top: 0;
+        box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
+      }
+
+      &:hover::before {
+        background-color: #d22856;
+        box-shadow: 0 10px 0 0 #d22856, 0 20px 0 0 #d22856;
+      }
+
+      &:active::before {
+        background-color: fade-out(#d22856, 0.3);
+        box-shadow: 0 10px 0 0 fade-out(#d22856, 0.3), 0 20px 0 0 fade-out(#d22856, 0.3);
+      }
+
+      &::after {
+        display: none;
+      }
+    }
 
     .main-nav__list {
       display: none;
@@ -64,14 +146,6 @@
 
     @media (min-width: $desktop-width) {
       margin-left: 0;
-    }
-  }
-
-  &__button-toggle {
-    margin-right: 23px;
-
-    @media (min-width: $desktop-width) {
-      display: none;
     }
   }
 }
