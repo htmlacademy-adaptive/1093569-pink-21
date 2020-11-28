@@ -48,6 +48,8 @@
   }
 
   &__contacts-item:last-child {
+    z-index: 3;
+
     @media (min-width: $tablet-width) {
       grid-column: 1/-1;
       grid-row: 2/3;
@@ -91,6 +93,16 @@
     text-decoration: none;
     cursor: pointer;
 
+    &--mail:hover {
+      color: #283645;
+      text-decoration: revert;
+    }
+
+    &--mail:active {
+      color: fade-out(#283645, 0.6);
+      text-decoration: none;
+    }
+
     @media (min-width: $desktop-width) {
       padding-top: 17px;
     }
@@ -110,19 +122,49 @@
   }
 
   &__map {
+    position: relative;
     margin: 0;
     width: 100%;
-    height: 200px;
+    height: 235px;
     background-image: url("../img/map.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 516%;
+    background-position: 50% 100%;
+    z-index: 1;
+
+    &::before {
+      position: absolute;
+      top: -56px;
+      left: 0;
+      content: "";
+      width: 1200px;
+      height: 123px;
+      background-image: url("../img/triangle-footer.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 2;
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
 
     @media (min-width: $tablet-width) {
-      height: 374px;
+      height: 400px;
+      background-size: 327%;
+      background-position: 50% 72%;
+
+      &::before {
+        top: -33px;
+      }
     }
 
     @media (min-width: $desktop-width) {
-      height: 502px;
+      height: 523px;
+      background-size: 212%;
+      background-position: 45% 54%;
+
+      &::before {
+        top: 0;
+      }
     }
   }
 }
