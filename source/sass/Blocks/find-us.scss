@@ -1,43 +1,49 @@
 .find-us {
-  &__contacts-title {
-    font-size: 18px;
-    padding: 0;
-    margin: 0;
+  &__wrapper {
+    padding-top: 19px;
   }
 
   &__offer {
     text-align: center;
     font-size: 24px;
+    line-height: 28px;
+    font-weight: 300;
 
     @media (min-width: $tablet-width) {
       font-size: 40px;
+      margin: 27px auto 0;
+      line-height: 52px;
     }
 
     @media (min-width: $desktop-width) {
       font-size: 50px;
+      padding-top: 11px;
+      line-height: 70px;
     }
   }
 
   &__offer-answer,
   &__offer-question {
-    padding: 0;
-    margin: 0;
+    @include text-reset;
   }
 
   &__contacts-list {
+    @include list-reset;
     display: grid;
     grid-template-rows: minmax(40px, auto) minmax(40px, auto) minmax(40px, auto);
-    gap: 30px;
+    gap: 13px;
     text-align: center;
 
     @media (min-width: $tablet-width) {
       grid-template-rows: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+      gap: 0 20px;
     }
 
     @media (min-width: $desktop-width) {
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr;
+      gap: 0;
     }
   }
 
@@ -45,28 +51,62 @@
     @media (min-width: $tablet-width) {
       grid-column: 1/-1;
       grid-row: 2/3;
+
+      .find-us__contacts-title {
+        padding-top: 20px;
+      }
     }
 
     @media (min-width: $desktop-width) {
       grid-row: 1/-1;
-      grid-column: 3/4;
+      grid-column: 2/3;
+
+      .find-us__contacts-title {
+        padding-top: 32px;
+      }
+    }
+  }
+
+  &__contacts-title {
+    font-size: 18px;
+    line-height: 32px;
+    padding-top: 5px;
+    margin: 0;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 32px;
+      line-height: 33px;
+    }
+
+    @media (min-width: $desktop-width) {
+      line-height: 37px;
     }
   }
 
   &__contacts-link {
+    display: block;
     font-size: 24px;
     color: #d22856;
     font-weight: 300;
     text-decoration: none;
     cursor: pointer;
+
+    @media (min-width: $desktop-width) {
+      padding-top: 17px;
+    }
   }
 
   &__contacts {
     font-size: 24px;
+    line-height: 31px;
     color: #d22856;
     font-weight: 300;
     margin: 0;
     padding: 0;
+
+    @media (min-width: $desktop-width) {
+      padding-top: 16px;
+    }
   }
 
   &__map {
