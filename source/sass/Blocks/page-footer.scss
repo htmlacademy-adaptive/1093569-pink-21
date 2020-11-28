@@ -1,80 +1,80 @@
 .page-footer {
   overflow: hidden;
+}
 
-  &__wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 284px;
-    align-items: center;
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 284px;
+  align-items: center;
 
-    @media (min-width: $tablet-width) {
-      flex-direction: row;
-      min-height: 127px;
-    }
-
-    @media (min-width: $desktop-width) {
-      min-height: 197px;
-    }
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    min-height: 127px;
   }
 
-  &__logo {
-    margin-top: 40px;
+  @media (min-width: $desktop-width) {
+    min-height: 197px;
+  }
+}
 
-    @media (min-width: $tablet-width) {
-      margin: 0;
-    }
+.page-footer__logo {
+  margin-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.page-footer__social {
+  @include list-reset;
+  margin-top: 36px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 0 72px;
   }
 
-  &__social {
-    @include list-reset;
-    margin-top: 36px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  @media (min-width: $desktop-width) {
+    margin: 0 auto 0 242px;
+  }
+}
 
-    @media (min-width: $tablet-width) {
-      margin: 0 auto 0 72px;
-    }
+.page-footer__social-item {
+  margin-left: 4px;
+  margin-right: 4px;
 
-    @media (min-width: $desktop-width) {
-      margin: 0 auto 0 242px;
-    }
+  @media (min-width: $desktop-width) {
+    margin-left: 6px;
+    margin-right: 0;
+  }
+}
+
+.page-footer__copyright {
+  display: flex;
+  align-items: center;
+  margin-top: 34px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
   }
 
-  &__social-item {
-    margin-left: 4px;
-    margin-right: 4px;
-
-    @media (min-width: $desktop-width) {
-      margin-left: 6px;
-      margin-right: 0;
-    }
+  @media (min-width: $desktop-width) {
+    margin-right: 10px;
   }
+}
 
-  &__copyright {
-    display: flex;
-    align-items: center;
-    margin-top: 34px;
-    margin-bottom: 20px;
+.page-footer__copyright-text {
+  font-size: 14px;
 
-    @media (min-width: $tablet-width) {
-      margin: 0;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-right: 10px;
-    }
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
   }
+}
 
-  &__copyright-text {
-    font-size: 14px;
-
-    @media (min-width: $desktop-width) {
-      font-size: 18px;
-    }
-  }
-
-  &__copyright-link {
-    margin-left: 15px;
-  }
+.page-footer__copyright-link {
+  margin-left: 15px;
 }

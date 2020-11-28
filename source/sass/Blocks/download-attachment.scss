@@ -19,228 +19,221 @@
     background-image: url("../img/back-desktop.png");
     min-height: 853px;
   }
+}
 
-  &__center {
-    margin: 0 auto;
-    min-height: inherit;
-    box-sizing: border-box;
+.download-attachment__center {
+  margin: 0 auto;
+  min-height: inherit;
+  box-sizing: border-box;
 
-    @media (min-width: $tablet-width) {
-      width: $tablet-width;
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: $desktop-width;
-      padding: 0;
-    }
-  }
-
-  &__wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: inherit;
-    text-align: center;
-    align-items: center;
-
-    @media (min-width: $tablet-width) {
-      justify-content: center;
-      align-items: start;
-    }
-  }
-
-  &__preview {
-    position: relative;
-    margin-top: 90px;
-    width: 280px;
-
-    @media (min-width: $tablet-width) {
-      margin-top: 106px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-top: 102px;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 320px;
-      height: 286px;
-      background-image: url("../img/hand.png");
-      background-repeat: no-repeat;
-      background-size: 510px 314px;
-      background-position-x: -173px;
-      top: 86px;
-      left: -20px;
-
-      @media (min-width: $tablet-width) {
-        width: 660px;
-        height: 545px;
-        background-size: 884px 545px;
-        top: -20px;
-        left: 45px;
-      }
-
-      @media (min-width: $desktop-width) {
-        width: 1050px;
-        height: 645px;
-        background-size: cover;
-        top: -2px;
-        left: 199px;
-      }
-    }
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 111px;
-      height: 197px;
-      background-image: url("../img/screen.png");
-      background-size: cover;
-      left: 84px;
-      top: 119px;
-
-      @media (min-width: $tablet-width) {
-        width: 195px;
-        height: 346px;
-        left: 352px;
-        top: 34px;
-      }
-
-      @media (min-width: $desktop-width) {
-        width: 230px;
-        height: 408px;
-        top: 63px;
-        left: 596px;
-      }
-    }
-  }
-
-  &__slogan {
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 120%;
-    color: #ffffff;
-    margin: 0 auto;
-
-    @media (min-width: $tablet-width) {
-      font-size: 40px;
-      padding-left: 19px;
-    }
-
-    @media (min-width: $desktop-width) {
-      font-size: 50px;
-      padding-left: 40px;
-      line-height: 68px;
-    }
-  }
-
-  &__slogan-br {
-    display: none;
-
-    @media (min-width: $tablet-width) {
-      display: inline;
-    }
-  }
-
-  &__buttons-wrapper {
-    width: $mobile-width;
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 28px;
-    box-sizing: border-box;
-    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    padding: 0;
+  }
+}
+
+.download-attachment__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: inherit;
+  text-align: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: center;
+    align-items: start;
+  }
+}
+
+.download-attachment__slogan {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 120%;
+  color: #ffffff;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    padding-left: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    padding-left: 40px;
+    line-height: 68px;
+  }
+}
+
+.download-attachment__slogan-br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+}
+
+.download-attachment__preview {
+  position: relative;
+  margin-top: 90px;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 106px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 102px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 286px;
+    background-image: url("../img/hand.png");
+    background-repeat: no-repeat;
+    background-size: 510px 314px;
+    background-position-x: -173px;
+    top: 86px;
+    left: -20px;
 
     @media (min-width: $tablet-width) {
-      padding-left: 0;
-      padding-right: 0;
-      padding-top: 30px;
+      width: 660px;
+      height: 545px;
+      background-size: 884px 545px;
+      top: -20px;
+      left: 45px;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 0;
+      width: 1050px;
+      height: 645px;
+      background-size: cover;
+      top: -2px;
+      left: 199px;
     }
   }
 
-  &__buttons {
-    background-color: #1d2631;
-    width: 100%;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 111px;
+    height: 197px;
+    background-image: url("../img/screen.png");
+    background-size: cover;
+    left: 84px;
+    top: 119px;
 
     @media (min-width: $tablet-width) {
-      background-color: transparent;
-      width: auto;
-      height: auto;
-      z-index: 0;
+      width: 195px;
+      height: 346px;
+      left: 352px;
+      top: 34px;
     }
 
     @media (min-width: $desktop-width) {
-      padding-left: 10px;
-      margin-top: 36px;
+      width: 230px;
+      height: 408px;
+      top: 63px;
+      left: 596px;
     }
   }
+}
 
-  &__button {
-    display: block;
-    text-align: center;
-    font-weight: 700;
+.download-attachment__buttons-wrapper {
+  width: $mobile-width;
+  padding: 28px 20px 0 28px;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.download-attachment__buttons {
+  background-color: #1d2631;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    width: auto;
+    height: auto;
+    z-index: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 10px;
+    margin-top: 36px;
+  }
+}
+
+.download-attachment__links {
+  @include list-reset;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 34px;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 47px 37px 0 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 70px 31px 0 10px;
+  }
+}
+
+.download-attachment__button {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  border: 3px solid white;
+  border-radius: 40px;
+  padding: 15px 0;
+
+  @media (min-width: $tablet-width) {
+    width: 294px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+  }
+}
+
+.download-attachment__annotation {
+  font-size: 14px;
+  font-weight: 300;
+  color: #ffffff;
+  line-height: 24px;
+  padding-top: 2px;
+  padding-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
     font-size: 18px;
-    line-height: 18px;
-    color: #ffffff;
-    text-decoration: none;
-    cursor: pointer;
-    border: 3px solid white;
-    border-radius: 40px;
-    padding: 15px 0;
-
-    @media (min-width: $tablet-width) {
-      width: 294px;
-    }
-
-    @media (min-width: $desktop-width) {
-      font-size: 21px;
-    }
+    padding: 11px 20px 0 0;
   }
 
-  &__links {
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 34px;
-    align-items: center;
-
-    @media (min-width: $tablet-width) {
-      padding-top: 47px;
-      padding-left: 12px;
-      padding-right: 37px;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-top: 70px;
-      padding-left: 10px;
-      padding-right: 31px;
-    }
-  }
-
-  &__annotation {
-    font-size: 14px;
-    font-weight: 300;
-    color: #ffffff;
-    line-height: 24px;
-    padding-top: 2px;
-    padding-bottom: 18px;
-
-    @media (min-width: $tablet-width) {
-      font-size: 18px;
-      padding-top: 11px;
-      padding-right: 20px;
-      padding-bottom: 0;
-    }
-
-    @media (min-width: $desktop-width) {
-      padding-top: 28px;
-      padding-left: 3px;
-    }
+  @media (min-width: $desktop-width) {
+    padding-top: 28px;
+    padding-left: 3px;
   }
 }

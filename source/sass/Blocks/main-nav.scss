@@ -1,55 +1,69 @@
-.main-nav {
-  &__list {
-    @include list-reset;
+.main-nav__item-link {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 62px;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Open Sans", "Arial Black", sans-serif;
+  text-decoration: none;
 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-
-    @media (min-width: $desktop-width) {
-      flex-direction: row;
-      min-height: 109px;
-      align-items: center;
-      width: 700px;
-      justify-content: flex-end;
-    }
+  &:hover {
+    color: #d22856;
   }
 
-  &__item {
-    text-align: center;
-    min-height: 62px;
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
-    border-bottom: 1px solid rgba(0, 0, 0, 1);
-
-    @media (min-width: $desktop-width) {
-      border: none;
-
-      &:nth-child(1) {
-        margin-right: 79px;
-      }
-
-      &:nth-child(2) {
-        margin-right: 86px;
-      }
-
-      &:nth-child(3) {
-        margin-right: 73px;
-      }
-    }
+  &:active {
+    color: fade-out(#d22856, 0.7);
   }
 
-  &__item-link {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 62px;
-    color: white;
-    text-transform: uppercase;
-    font-family: "Open Sans", "Arial Black", sans-serif;
-    text-decoration: none;
+  @media (min-width: $desktop-width) {
+    font-weight: 400;
+    text-transform: none;
 
-    @media (min-width: $desktop-width) {
-      font-weight: 400;
-      text-transform: none;
+    &:active {
+      color: fade-out(#ffffff, 0.7);
+    }
+  }
+}
+
+.main-nav__list {
+  @include list-reset;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    min-height: 109px;
+    align-items: center;
+    width: 700px;
+    justify-content: flex-end;
+  }
+}
+
+.main-nav__item {
+  text-align: center;
+  min-height: 62px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(0, 0, 0, 1);
+
+  @media (min-width: $desktop-width) {
+    border: 0;
+
+    &--active {
+      border-bottom: 3px solid #ffffff;
+    }
+
+    &:nth-child(1) {
+      margin-right: 79px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 86px;
+    }
+
+    &:nth-child(3) {
+      margin-right: 73px;
     }
   }
 }

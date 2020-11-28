@@ -1,30 +1,28 @@
-.slider {
-  &__toggle {
-    box-sizing: initial;
-    border: none;
-    padding: 0;
-    width: 6px;
-    height: 6px;
-    background-color: fade-out(#283645, 0.7);
-    border-radius: 50%;
-    margin: 0 11px 0 7px;
+.slider__toggle {
+  box-sizing: initial;
+  border: none;
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  background-color: fade-out(#283645, 0.7);
+  border-radius: 50%;
+  margin: 0 11px 0 7px;
 
-    &:hover {
-      background-color: fade-out(#283645, 0.4);
-    }
+  &:hover {
+    background-color: fade-out(#283645, 0.4);
+  }
 
+  &:active {
+    background-color: fade-out(#283645, 0.9);
+  }
+
+  &--current {
+    background-color: #ffffff;
+    border: 3px solid #283645;
+
+    &:hover,
     &:active {
-      background-color: fade-out(#283645, 0.9);
-    }
-
-    &--current {
       background-color: #ffffff;
-      border: 3px solid #283645;
-
-      &:hover,
-      &:active {
-        background-color: #ffffff;
-      }
     }
   }
 }
