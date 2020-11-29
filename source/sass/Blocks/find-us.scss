@@ -1,88 +1,168 @@
-.find-us {
-  &__contacts-title {
-    font-size: 18px;
-    padding: 0;
-    margin: 0;
+.find-us__wrapper {
+  padding-top: 19px;
+}
+
+.find-us__offer {
+  text-align: center;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 300;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    margin: 27px auto 0;
+    line-height: 52px;
   }
 
-  &__offer {
-    text-align: center;
-    font-size: 24px;
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    padding-top: 11px;
+    line-height: 70px;
+  }
+}
 
-    @media (min-width: $tablet-width) {
-      font-size: 40px;
-    }
+.find-us__offer-answer,
+.find-us__offer-question {
+  @include text-reset;
+}
 
-    @media (min-width: $desktop-width) {
-      font-size: 50px;
+.find-us__contacts-list {
+  @include list-reset;
+  display: grid;
+  grid-template-rows: minmax(40px, auto) minmax(40px, auto) minmax(40px, auto);
+  gap: 13px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0;
+  }
+}
+
+.find-us__contacts-item:last-child {
+  z-index: 3;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+
+    .find-us__contacts-title {
+      padding-top: 20px;
     }
   }
 
-  &__offer-answer,
-  &__offer-question {
-    padding: 0;
-    margin: 0;
-  }
+  @media (min-width: $desktop-width) {
+    grid-row: 1/-1;
+    grid-column: 2/3;
 
-  &__contacts-list {
-    display: grid;
-    grid-template-rows: minmax(40px, auto) minmax(40px, auto) minmax(40px, auto);
-    gap: 30px;
-    text-align: center;
-
-    @media (min-width: $tablet-width) {
-      grid-template-rows: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-    }
-
-    @media (min-width: $desktop-width) {
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr;
+    .find-us__contacts-title {
+      padding-top: 32px;
     }
   }
+}
 
-  &__contacts-item:last-child {
-    @media (min-width: $tablet-width) {
-      grid-column: 1/-1;
-      grid-row: 2/3;
-    }
+.find-us__contacts-title {
+  font-size: 18px;
+  line-height: 32px;
+  padding-top: 5px;
+  margin: 0;
 
-    @media (min-width: $desktop-width) {
-      grid-row: 1/-1;
-      grid-column: 3/4;
-    }
+  @media (min-width: $tablet-width) {
+    padding-top: 32px;
+    line-height: 33px;
   }
 
-  &__contacts-link {
-    font-size: 24px;
-    color: #d22856;
-    font-weight: 300;
+  @media (min-width: $desktop-width) {
+    line-height: 37px;
+  }
+}
+
+.find-us__contacts-link {
+  display: block;
+  font-size: 24px;
+  color: #d22856;
+  font-weight: 300;
+  text-decoration: none;
+  cursor: pointer;
+
+  &--mail:hover {
+    color: #283645;
+    text-decoration: revert;
+  }
+
+  &--mail:active {
+    color: fade-out(#283645, 0.6);
     text-decoration: none;
-    cursor: pointer;
   }
 
-  &__contacts {
-    font-size: 24px;
-    color: #d22856;
-    font-weight: 300;
-    margin: 0;
-    padding: 0;
+  @media (min-width: $desktop-width) {
+    padding-top: 17px;
   }
+}
 
-  &__map {
-    margin: 0;
-    width: 100%;
-    height: 200px;
-    background-image: url("../img/map.png");
+.find-us__contacts {
+  font-size: 24px;
+  line-height: 31px;
+  color: #d22856;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 16px;
+  }
+}
+
+.find-us__map {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  height: 235px;
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+  background-size: 516%;
+  background-position: 50% 100%;
+  z-index: 1;
+
+  &::before {
+    position: absolute;
+    top: -56px;
+    left: 0;
+    content: "";
+    width: 1200px;
+    height: 123px;
+    background-image: url("../img/triangle-footer.svg");
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 2;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
 
-    @media (min-width: $tablet-width) {
-      height: 374px;
+  @media (min-width: $tablet-width) {
+    height: 400px;
+    background-size: 327%;
+    background-position: 50% 72%;
+
+    &::before {
+      top: -33px;
     }
+  }
 
-    @media (min-width: $desktop-width) {
-      height: 502px;
+  @media (min-width: $desktop-width) {
+    height: 523px;
+    background-size: 212%;
+    background-position: 45% 54%;
+
+    &::before {
+      top: 0;
     }
   }
 }

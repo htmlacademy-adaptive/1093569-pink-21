@@ -1,18 +1,10 @@
 .page__body {
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
   position: relative;
   color: $brand-font-color;
   background-color: $brand-background-color;
   font-family: "Open Sans", "Arial Black", sans-serif;
   height: 100%;
   margin: 0 auto;
-}
-
-.page__body ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .container-center {
@@ -29,6 +21,7 @@
 
   @media (min-width: $desktop-width) {
     width: $desktop-width;
+    padding: 0;
   }
 }
 
