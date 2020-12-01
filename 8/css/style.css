@@ -999,6 +999,11 @@ template {
   @media (min-width: 960px) {
     .download-attachment__button {
       font-size: 21px; } }
+  .download-attachment__button:hover {
+    background-color: #ffffff;
+    color: #d22856; }
+  .download-attachment__button:active {
+    color: rgba(210, 40, 86, 0.3); }
 
 .download-attachment__annotation {
   font-size: 14px;
