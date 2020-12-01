@@ -143,10 +143,47 @@
   }
 }
 
-.page-header__logo-mobile {
+.page-header__logo-link {
   margin-left: 20px;
+  margin-top: 8px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -6px;
+  }
 
   @media (min-width: $desktop-width) {
     margin-left: 0;
+  }
+}
+
+.page-header__logo-img {
+  display: none;
+
+  &--mobile {
+    display: inline;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+
+    &--tablet {
+      display: inline;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+
+    &--desktop {
+      display: inline;
+    }
+  }
+
+  &:hover path {
+    fill: #d22856;
+  }
+
+  &:active path {
+    fill: fade-out(#ffffff, 0.7);
   }
 }

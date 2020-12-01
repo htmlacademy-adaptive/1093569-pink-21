@@ -22,7 +22,11 @@
   margin-top: 40px;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin-top: -15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 10px;
   }
 }
 
@@ -38,7 +42,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 auto 0 242px;
+    margin: 0 auto 0 230px;
   }
 }
 
@@ -77,4 +81,28 @@
 
 .page-footer__copyright-link {
   margin-left: 15px;
+}
+
+.page-footer__logo-img {
+  display: none;
+
+  &--tablet {
+    display: inline;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+
+    &--desktop {
+      display: inline;
+    }
+  }
+
+  &:hover path {
+    fill: #d22856;
+  }
+
+  &:active path:nth-child(-n+4) {
+    fill: fade-out(#283645, 0.7);
+  }
 }
