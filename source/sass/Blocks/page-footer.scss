@@ -56,6 +56,17 @@
   }
 }
 
+.page-footer__social-ico {
+  &:hover circle {
+    opacity: 100%;
+  }
+
+  &:active,
+  &:active circle {
+    opacity: 30%;
+  }
+}
+
 .page-footer__copyright {
   display: flex;
   align-items: center;
@@ -76,6 +87,16 @@
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
+  }
+}
+
+.page-footer__copyright-ico {
+  &:hover path {
+    fill: #283645;
+  }
+
+  &:active path {
+    fill-opacity: 30%;
   }
 }
 
