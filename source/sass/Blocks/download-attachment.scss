@@ -238,6 +238,15 @@
   @media (min-width: $desktop-width) {
     font-size: 21px;
   }
+
+  &:hover {
+    background-color: #ffffff;
+    color: #d22856;
+  }
+
+  &:active {
+    color: fade-out(#d22856, 0.7);
+  }
 }
 
 .download-attachment__annotation {
