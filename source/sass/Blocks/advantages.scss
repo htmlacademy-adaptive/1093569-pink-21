@@ -98,6 +98,7 @@
     width: 157px;
     height: 277px;
     background-repeat: no-repeat;
+    background-size: 100%;
     margin: 40px auto 0;
 
     @media (min-width: $tablet-width) {
@@ -123,6 +124,10 @@
       @media (min-width: $desktop-width) {
         background-image: url("../img/phone-wb-desktop.png");
         display: block;
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/phone-wb-desktop@2x.png");
+        }
       }
     }
   }
@@ -132,6 +137,10 @@
       @media (min-width: $desktop-width) {
         background-image: url("../img/phone-pink-desktop.png");
         display: block;
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/phone-pink-desktop@2x.png");
+        }
       }
     }
   }
@@ -141,12 +150,24 @@
       display: block;
       background-image: url("../img/phone-smile-mobile.png");
 
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/phone-smile-mobile@2x.png");
+      }
+
       @media (min-width: $tablet-width) {
         background-image: url("../img/phone-smile-tablet.png");
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/phone-smile-tablet@2x.png");
+        }
       }
 
       @media (min-width: $desktop-width) {
         background-image: url("../img/phone-smile-desktop.png");
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/phone-smile-desktop@2x.png");
+        }
       }
     }
   }
