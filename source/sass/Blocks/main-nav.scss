@@ -19,6 +19,11 @@
     font-weight: 400;
     text-transform: none;
 
+    &--active {
+      padding-bottom: 7px;
+      border-bottom: 2px solid #ffffff;
+    }
+
     &:active {
       color: fade-out(#ffffff, 0.7);
     }
@@ -49,10 +54,6 @@
 
   @media (min-width: $desktop-width) {
     border: 0;
-
-    &--active {
-      border-bottom: 3px solid #ffffff;
-    }
 
     &:nth-child(1) {
       margin-right: 79px;

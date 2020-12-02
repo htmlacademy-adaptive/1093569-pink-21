@@ -1,1 +1,250 @@
-//zaglushka
+.raffle-form__rules {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 0;
+  padding: 44px 20px 0 20px;
+}
+
+.raffle-form__user-card {
+  @include text-reset;
+  border: 0;
+  margin-top: 35px;
+}
+
+.raffle-form__card-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.raffle-form__card-label {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #d22856;
+  margin-left: 23px;
+}
+
+.raffle-form__card-input {
+  width: 272px;
+  height: 59px;
+  margin-top: 3px;
+  margin-bottom: 17px;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+
+  &::placeholder {
+    color: #283645;
+    font-size: 18px;
+    padding-left: 18px;
+  }
+}
+
+.raffle-form__achievements {
+  @include text-reset;
+  margin-top: 25px;
+  border: 0;
+  background-color: #f2f2f2;
+}
+
+.raffle-form__achievements-legend {
+  font-size: 14px;
+  text-align: center;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #d22856;
+  padding-top: 41px;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.raffle-form__achievements-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px 20px 20px;
+  min-height: 511px;
+}
+
+.raffle-form__achievements-label {
+  position: relative;
+  font-size: 18px;
+  line-height: 36px;
+  margin: 41px 0 5px 59px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    border-radius: 3px;
+    left: -59px;
+    top: -1px;
+  }
+}
+
+.raffle-form__achievements-checkbox {
+  &:checked + .raffle-form__achievements-label::after {
+    content: url("../img/check.svg");
+    position: absolute;
+    left: -50px;
+    top: 1px;
+  }
+}
+
+.raffle-form__user-contacts {
+  @include text-reset;
+  border: 0;
+  margin-top: 39px;
+}
+
+.raffle-form__contacts-legend {
+  display: none;
+}
+
+.raffle-form__contacts-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.raffle-form__contacts-label {
+  align-self: baseline;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #d22856;
+  margin-left: 44px;
+}
+
+.raffle-form__contacts-input {
+  margin-top: 12px;
+  margin-bottom: 24px;
+  height: 57px;
+  width: 272px;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+
+  &::placeholder {
+    color: #283645;
+    font-size: 18px;
+    padding-left: 18px;
+  }
+}
+
+.raffle-form__travel-soft {
+  @include text-reset;
+  border: 0;
+  background-color: #f2f2f2;
+  margin-top: 18px;
+}
+
+.raffle-form__travel-legend {
+  font-size: 14px;
+  text-align: center;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #d22856;
+  width: 100%;
+  background-color: #f2f2f2;
+  padding-top: 39px;
+}
+
+.raffle-form__travel-wrapper {
+  display: flex;
+  min-height: 245px;
+  flex-direction: column;
+  padding: 0 20px 20px 20px;
+}
+
+.raffle-form__travel-label {
+  position: relative;
+  font-size: 18px;
+  line-height: 42px;
+  margin-top: 33px;
+  margin-left: 70px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    border-radius: 50%;
+    left: -70px;
+  }
+}
+
+.raffle-form__travel-radio {
+  &:checked + .raffle-form__travel-label::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #d22856;
+    left: -57px;
+    top: 14px;
+  }
+}
+
+.raffle-form__user-emotion {
+  text-align: center;
+  margin-top: 39px;
+  border: 0;
+}
+
+.raffle-form__emotion-legend {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #d22856;
+}
+
+.raffle-form__emotion-area {
+  border: 2px solid #e5e5e5;
+  border-radius: 3px;
+  margin-top: 11px;
+  width: 272px;
+  height: 193px;
+  resize: none;
+
+  &::placeholder {
+    font-size: 18px;
+    line-height: 30px;
+    color: #283645;
+    padding-top: 12px;
+    padding-left: 18px;
+  }
+}
+
+.raffle-form__button-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 35px 30px 0 20px;
+}
+
+.raffle-form__button {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  width: 279px;
+  height: 63px;
+  background-color: #2aab6d;
+  border: 0;
+  border-radius: 3px;
+}
+
+.raffle-form__recommendation {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 41px 0 23px 49px;
+
+  span {
+    color: #d22856;
+  }
+}

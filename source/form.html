@@ -43,7 +43,7 @@
           <ul class="main-nav__list">
             <li class="main-nav__item"><a href="index.html" class="main-nav__item-link" title="Home">Главная</a></li>
             <li class="main-nav__item"><a href="catalog.html" class="main-nav__item-link" title="Photo">Фотографии</a></li>
-            <li class="main-nav__item main-nav__item--active"><a href="form.html" class="main-nav__item-link" title="Contest">Конкурс</a></li>
+            <li class="main-nav__item"><a href="form.html" class="main-nav__item-link main-nav__item-link--active" title="Contest">Конкурс</a></li>
             <li class="main-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__item-link" title="HTML Academy">HTML Academy</a></li>
           </ul>
         </nav>
@@ -51,58 +51,74 @@
     </header>
 
     <main class="page-main">
-
-      <h1 class="page-main__raffle-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-
-      <form action="https://echo.htmlacademy.ru" method="post" class="raffle-form">
-        <div class="raffle-form__wrapper">
-          <h2 class="raffle-form__rules">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h2>
-          <fieldset class="user-card">
-            <label for="user-surname" class="user-card__label raffle-form__label">Фамилия:</label>
-            <input type="text" id="user-surname" class="user-card__text-input" name="user-surname" placeholder="Укажите фамилию *" pattern="[A-Za-zА-Яа-яЁё]" maxlength="20" required>
-            <label for="user-name" class="user-card__label raffle-form__label">Имя:</label>
-            <input type="text" id="user-name" class="user-card__text-input" name="user-name" placeholder="Введите ваше имя *" pattern="[A-Za-zА-Яа-яЁё]" maxlength="20" required>
-            <label for="user-patronymic" class="user-card__label raffle-form__label">Отчество:</label>
-            <input type="text" id="user-patronymic" class="user-card__text-input" name="user-patronymic" placeholder="Ну и отчество тоже" pattern="[A-Za-zА-Яа-яЁё]" maxlength="20">
-          </fieldset>
-          <fieldset class="achievements">
-            <legend class="raffle-form__legend raffle-form__label">Ваши безбашенные достижения в путешествии</legend>
-            <input type="checkbox" id="selfie-with-shark" name="selfie-with-shark" class="achievements__checkbox" checked>
-            <label for="selfie-with-shark" class="achievements__label">Сделал селфи с акулой</label>
-            <input type="checkbox" id="strong-tan" name="strong-tan" class="achievements__checkbox" checked>
-            <label for="strong-tan" class="achievements__label">Обгорел на пляже</label>
-            <input type="checkbox" id="chuck-norris" name="chuck-norris" class="achievements__checkbox">
-            <label for="chuck-norris" class="achievements__label">Видел Чака Норриса</label>
-            <input type="checkbox" id="souvenirs" name="souvenirs" class="achievements__checkbox">
-            <label for="souvenirs" class="achievements__label">Накупил сувениров</label>
-            <input type="checkbox" id="kept-tower" name="kept-tower" class="achievements__checkbox" checked>
-            <label for="kept-tower" class="achievements__label">Удержал башню</label>
-            <input type="checkbox" id="destroyed-hotel" name="destroyed-hotel" class="achievements__checkbox">
-            <label for="destroyed-hotel" class="achievements__label">Разгромил отель</label>
-          </fieldset>
-          <fieldset class="user-contacts">
-            <label for="user-telephone" class="user-contacts__label  raffle-form__label">Номер телефона</label>
-            <input type="text" id="user-telephone" name="user-telephone" class="user-contacts__input"  pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" maxlength="16" placeholder="Номер, пожалуйста">
-            <label for="user-email" class="user-contacts__label  raffle-form__label"> Адрес почты</label>
-            <input type="text" id="user-email" name="user-email" class="user-contacts__text-input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" maxlength="25" placeholder="Введите почту *" required>
-          </fieldset>
-          <fieldset class="travel-soft">
-            <legend class="raffle-form__legend raffle-form__label">С каким приложением путешествовали?</legend>
-            <input type="radio" id="ios" name="os" class="travel-soft__radio" value="ios" checked>
-            <label for="ios" class="travel-soft__label">Pink для iOS</label>
-            <input type="radio" id="android" name="os" class="travel-soft__radio" value="android">
-            <label for="android" class="travel-soft__label">Pink на Android</label>
-            <input type="radio" id="windows" name="os" class="travel-soft__radio" value="windows">
-            <label for="windows" class="travel-soft__label">Windows Phone</label>
-          </fieldset>
-          <fieldset class="user-emotion">
-            <legend class="raffle-form__legend raffle-form__label">Опишите свои эмоции</legend>
-            <textarea cols="25" rows="8" class="user-emotion__text-area" name="user-emotion" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-          </fieldset>
-          <button class="raffle-form__button" type="submit">Отправить форму</button>
-          <small class="raffle-form__recommendation">* — обязательные поля</small>
+      <header class="raffle-header">
+        <div class="container-center">
+          <h1 class="raffle-header__raffle-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
         </div>
-      </form>
+      </header>
+      <section class="raffle-form">
+        <h1 class="visually-hidden">Анкета для участия в конкурсе</h1>
+        <form action="https://echo.htmlacademy.ru" method="post" class="raffle-form">
+          <h2 class="raffle-form__rules">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h2>
+          <div class="raffle-form__wrapper">
+              <fieldset class="raffle-form__user-card">
+                <div class="raffle-form__card-wrapper">
+                  <label for="user-surname" class="raffle-form__card-label">Фамилия:</label>
+                  <input type="text" id="user-surname" class="raffle-form__card-input" name="user-surname" placeholder="Укажите фамилию *" pattern="[A-Za-zА-Яа-яЁё]" maxlength="20" required>
+                  <label for="user-name" class="raffle-form__card-label">Имя:</label>
+                  <input type="text" id="user-name" class="raffle-form__card-input" name="user-name" placeholder="Введите ваше имя *" pattern="[A-Za-zА-Яа-яЁё]" maxlength="20" required>
+                  <label for="user-patronymic" class="raffle-form__card-label">Отчество:</label>
+                  <input type="text" id="user-patronymic" class="raffle-form__card-input" name="user-patronymic" placeholder="Ну и отчество тоже" pattern="[A-Za-zА-Яа-яЁё]" maxlength="20">
+                </div>
+              </fieldset>
+            <fieldset class="raffle-form__achievements">
+              <legend class="raffle-form__achievements-legend">Ваши безбашенные<br class="raffle-form__br-mobile"> достижения в путешествии</legend>
+              <div class="raffle-form__achievements-wrapper">
+                <input type="checkbox" id="selfie-with-shark" name="selfie-with-shark" class="visually-hidden raffle-form__achievements-checkbox" checked>
+                <label for="selfie-with-shark" class="raffle-form__achievements-label">Сделал селфи с акулой</label>
+                <input type="checkbox" id="strong-tan" name="strong-tan" class="visually-hidden raffle-form__achievements-checkbox" checked>
+                <label for="strong-tan" class="raffle-form__achievements-label">Обгорел на пляже</label>
+                <input type="checkbox" id="chuck-norris" name="chuck-norris" class="visually-hidden raffle-form__achievements-checkbox">
+                <label for="chuck-norris" class="raffle-form__achievements-label">Видел Чака Норриса</label>
+                <input type="checkbox" id="souvenirs" name="souvenirs" class="visually-hidden raffle-form__achievements-checkbox">
+                <label for="souvenirs" class="raffle-form__achievements-label">Накупил сувениров</label>
+                <input type="checkbox" id="kept-tower" name="kept-tower" class="visually-hidden raffle-form__achievements-checkbox" checked>
+                <label for="kept-tower" class="raffle-form__achievements-label">Удержал башню</label>
+                <input type="checkbox" id="destroyed-hotel" name="destroyed-hotel" class="visually-hidden raffle-form__achievements-checkbox">
+                <label for="destroyed-hotel" class="raffle-form__achievements-label">Разгромил отель</label>
+              </div>
+            </fieldset>
+            <fieldset class="raffle-form__user-contacts">
+              <legend class="raffle-form__contacts-legend">Контактная информация</legend>
+              <div class="raffle-form__contacts-wrapper">
+                <label for="user-telephone" class="raffle-form__contacts-label">Номер телефона</label>
+                <input type="text" id="user-telephone" name="user-telephone" class="raffle-form__contacts-input"  pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" maxlength="16" placeholder="Номер, пожалуйста">
+                <label for="user-email" class="raffle-form__contacts-label"> Адрес почты</label>
+                <input type="text" id="user-email" name="user-email" class="raffle-form__contacts-input" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" maxlength="25" placeholder="Введите почту *" required>
+              </div>
+            </fieldset>
+            <fieldset class="raffle-form__travel-soft">
+              <legend class="raffle-form__travel-legend">С каким приложением<br class="raffle-form__br-mobile"> путешествовали?</legend>
+              <div class="raffle-form__travel-wrapper">
+                <input type="radio" id="ios" name="os" class="visually-hidden raffle-form__travel-radio" value="ios" checked>
+                <label for="ios" class="raffle-form__travel-label">Pink для iOS</label>
+                <input type="radio" id="android" name="os" class="visually-hidden raffle-form__travel-radio" value="android">
+                <label for="android" class="raffle-form__travel-label">Pink на Android</label>
+                <input type="radio" id="windows" name="os" class="visually-hidden raffle-form__travel-radio" value="windows">
+                <label for="windows" class="raffle-form__travel-label">Windows Phone</label>
+              </div>
+            </fieldset>
+            <fieldset class="raffle-form__user-emotion">
+              <legend class="raffle-form__emotion-legend">Опишите свои эмоции</legend>
+              <textarea class="raffle-form__emotion-area" name="user-emotion" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+            </fieldset>
+            <div class="raffle-form__button-wrapper">
+              <button class="raffle-form__button" type="submit">Отправить форму</button>
+              <small class="raffle-form__recommendation"><span>*</span> — обязательные поля</small>
+            </div>
+          </div>
+        </form>
+      </section>
     </main>
 
     <footer class="page-footer">
