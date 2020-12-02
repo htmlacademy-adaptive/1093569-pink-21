@@ -14,7 +14,10 @@
 }
 
 .raffle-form__card-wrapper {
+  width: $mobile-width;
+  box-sizing: border-box;
   display: flex;
+  margin: 0 auto;
   flex-direction: column;
   padding-left: 20px;
   padding-right: 20px;
@@ -62,10 +65,13 @@
 }
 
 .raffle-form__achievements-wrapper {
+  width: $mobile-width;
+  margin: 0 auto;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   padding: 0 20px 20px 20px;
-  min-height: 511px;
+  min-height: 531px;
 }
 
 .raffle-form__achievements-label {
@@ -107,6 +113,9 @@
 }
 
 .raffle-form__contacts-wrapper {
+  width: $mobile-width;
+  margin: 0 auto;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -154,8 +163,11 @@
 }
 
 .raffle-form__travel-wrapper {
+  width: $mobile-width;
+  margin: 0 auto;
+  box-sizing: border-box;
   display: flex;
-  min-height: 245px;
+  min-height: 265px;
   flex-direction: column;
   padding: 0 20px 20px 20px;
 }
@@ -222,6 +234,9 @@
 }
 
 .raffle-form__button-wrapper {
+  width: $mobile-width;
+  margin: 0 auto;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   padding: 35px 30px 0 20px;
