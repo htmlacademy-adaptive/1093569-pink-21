@@ -10,17 +10,22 @@
 .raffle-form__user-card {
   @include text-reset;
   border: 0;
-  margin-top: 35px;
 }
 
 .raffle-form__card-wrapper {
   width: $mobile-width;
   box-sizing: border-box;
-  display: flex;
-  margin: 0 auto;
-  flex-direction: column;
+  margin: 35px auto 42px auto;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.raffle-form__card-list {
+  @include list-reset;
+}
+
+.raffle-form__card-item {
+  margin-bottom: 17px;
 }
 
 .raffle-form__card-label {
@@ -35,7 +40,6 @@
   width: 272px;
   height: 59px;
   margin-top: 3px;
-  margin-bottom: 17px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
 
@@ -48,7 +52,6 @@
 
 .raffle-form__achievements {
   @include text-reset;
-  margin-top: 25px;
   border: 0;
   background-color: #f2f2f2;
 }
@@ -66,19 +69,26 @@
 
 .raffle-form__achievements-wrapper {
   width: $mobile-width;
-  margin: 0 auto;
+  margin: 0 auto 19px auto;
   box-sizing: border-box;
+  padding: 0 20px 20px 20px;
+}
+
+.raffle-form__achievements-list {
+  @include list-reset;
   display: flex;
   flex-direction: column;
-  padding: 0 20px 20px 20px;
-  min-height: 531px;
+}
+
+.raffle-form__achievements-item {
+  margin: 41px 0 5px 59px;
 }
 
 .raffle-form__achievements-label {
   position: relative;
   font-size: 18px;
   line-height: 36px;
-  margin: 41px 0 5px 59px;
+
 
   &::before {
     content: "";
@@ -89,7 +99,7 @@
     border: 2px solid #e5e5e5;
     border-radius: 3px;
     left: -59px;
-    top: -1px;
+    top: -7px;
   }
 }
 
@@ -98,14 +108,13 @@
     content: url("../img/check.svg");
     position: absolute;
     left: -50px;
-    top: 1px;
+    top: -5px;
   }
 }
 
 .raffle-form__user-contacts {
   @include text-reset;
   border: 0;
-  margin-top: 39px;
 }
 
 .raffle-form__contacts-legend {
@@ -114,11 +123,21 @@
 
 .raffle-form__contacts-wrapper {
   width: $mobile-width;
-  margin: 0 auto;
+  margin: 38px auto 19px auto;
+  padding-left: 20px;
+  padding-right: 20px;
   box-sizing: border-box;
+}
+
+.raffle-form__contacts-list {
+  @include list-reset;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.raffle-form__contacts-item {
+  margin-bottom: 24px;
 }
 
 .raffle-form__contacts-label {
@@ -126,12 +145,11 @@
   font-size: 14px;
   text-transform: uppercase;
   color: #d22856;
-  margin-left: 44px;
+  margin-left: 24px;
 }
 
 .raffle-form__contacts-input {
-  margin-top: 12px;
-  margin-bottom: 24px;
+  margin-top: 10px;
   height: 57px;
   width: 272px;
   border: 2px solid #e5e5e5;
@@ -148,7 +166,6 @@
   @include text-reset;
   border: 0;
   background-color: #f2f2f2;
-  margin-top: 18px;
 }
 
 .raffle-form__travel-legend {
@@ -164,20 +181,26 @@
 
 .raffle-form__travel-wrapper {
   width: $mobile-width;
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
   box-sizing: border-box;
-  display: flex;
-  min-height: 265px;
-  flex-direction: column;
   padding: 0 20px 20px 20px;
+}
+
+.raffle-form__travel-list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+}
+
+.raffle-form__travel-item {
+  margin-top: 33px;
+  margin-left: 70px;
 }
 
 .raffle-form__travel-label {
   position: relative;
   font-size: 18px;
   line-height: 42px;
-  margin-top: 33px;
-  margin-left: 70px;
 
   &::before {
     content: "";
@@ -188,6 +211,7 @@
     border: 2px solid #e5e5e5;
     border-radius: 50%;
     left: -70px;
+    top: -8px;
   }
 }
 
@@ -200,26 +224,35 @@
     border-radius: 50%;
     background-color: #d22856;
     left: -57px;
-    top: 14px;
+    top: 5px;
   }
 }
 
 .raffle-form__user-emotion {
-  text-align: center;
-  margin-top: 39px;
+  @include text-reset;
   border: 0;
 }
 
 .raffle-form__emotion-legend {
+  padding-top: 39px;
   font-size: 14px;
+  text-align: center;
   text-transform: uppercase;
   color: #d22856;
+}
+
+.raffle-form__emotion-wrapper {
+  width: $mobile-width;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
 }
 
 .raffle-form__emotion-area {
   border: 2px solid #e5e5e5;
   border-radius: 3px;
-  margin-top: 11px;
+  margin-top: 16px;
   width: 272px;
   height: 193px;
   resize: none;
@@ -233,13 +266,18 @@
   }
 }
 
+.raffle-form__buttons {
+  @include text-reset;
+  border: 0;
+}
+
 .raffle-form__button-wrapper {
   width: $mobile-width;
   margin: 0 auto;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  padding: 35px 30px 0 20px;
+  padding: 45px 30px 0 20px;
 }
 
 .raffle-form__button {
