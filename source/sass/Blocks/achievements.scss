@@ -8,6 +8,10 @@
     background-color: inherit;
     padding-bottom: 49px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 64px;
+  }
 }
 
 .achievements__legend {
@@ -45,6 +49,34 @@
   flex-wrap: wrap;
   align-items: flex-start;
   flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+
+    :nth-child(1) {
+      order: 1;
+    }
+
+    :nth-child(2) {
+      order: 4;
+    }
+
+    :nth-child(3) {
+      order: 2;
+    }
+
+    :nth-child(4) {
+      order: 5;
+    }
+
+    :nth-child(5) {
+      order: 3;
+    }
+
+    :nth-child(6) {
+      order: 6;
+    }
+  }
 }
 
 .achievements__item {
@@ -53,12 +85,17 @@
   @media (min-width: $tablet-width) {
     margin: 47px 0 5px 117px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 48px 0 0 0;
+    width: 33%;
+  }
 }
 
 .achievements__item-label {
   position: relative;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 36px;
 
 
   &::before {
@@ -70,7 +107,20 @@
     border: 2px solid #e5e5e5;
     border-radius: 3px;
     left: -59px;
-    top: -6px;
+    top: -7px;
+
+    @media (min-width: $tablet-width) {
+      left: -59px;
+      top: -6px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 109px;
   }
 }
 
@@ -79,6 +129,11 @@
     content: url("../img/check.svg");
     position: absolute;
     left: -50px;
-    top: -1px;
+    top: -5px;
+
+    @media (min-width: $tablet-width) {
+      left: -50px;
+      top: -1px;
+    }
   }
 }

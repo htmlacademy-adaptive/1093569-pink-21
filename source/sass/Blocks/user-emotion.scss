@@ -6,6 +6,10 @@
     border: 2px solid #e5e5e5;
     padding-bottom: 48px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 40px;
+  }
 }
 
 .user-emotion__legend {
@@ -56,5 +60,11 @@
     margin-left: 58px;
     width: 492px;
     height: 185px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 35px;
+    width: 812px;
+    height: 120px;
   }
 }

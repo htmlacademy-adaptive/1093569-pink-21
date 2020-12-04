@@ -28,6 +28,11 @@
     margin-top: 33px;
     margin-bottom: 47px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    margin-bottom: 49px;
+  }
 }
 
 .user-card__item-label {
@@ -40,6 +45,10 @@
   @media (min-width: $tablet-width) {
     margin-left: 0;
     margin-right: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 10px;
   }
 }
 
@@ -59,5 +68,9 @@
   @media (min-width: $tablet-width) {
     width: auto;
     flex-grow: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 35px;
   }
 }

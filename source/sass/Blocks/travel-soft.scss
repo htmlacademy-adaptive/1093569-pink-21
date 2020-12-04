@@ -8,6 +8,10 @@
     border: 2px solid #e5e5e5;
     padding-bottom: 58px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 30px;
+  }
 }
 
 .travel-soft__legend {
@@ -55,6 +59,11 @@
   @media (min-width: $tablet-width) {
     margin-top: 48px;
     margin-left: 119px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 49px;
+    margin-left: 133px;
   }
 }
 

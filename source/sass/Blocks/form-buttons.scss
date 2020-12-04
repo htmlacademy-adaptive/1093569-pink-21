@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 49px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 12px;
+  }
 }
 
 .form-buttons__wrapper {
@@ -44,11 +48,23 @@
   text-transform: uppercase;
   margin: 41px 0 23px 49px;
 
-  span {
-    color: #d22856;
-  }
-
   @media (min-width: $tablet-width) {
     margin: 24px 0 0 137px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 25px 0 0 326px;
+  }
+}
+
+.form-buttons__recommendation-star {
+  color: #d22856;
+}
+
+.form-buttons__recommendation-span {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
   }
 }

@@ -18,6 +18,10 @@
   @media (min-width: $tablet-width) {
     display: block;
   }
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
 }
 
 .raffle-form__wrapper {
@@ -31,12 +35,25 @@
     box-sizing: border-box;
     row-gap: 10px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    grid-auto-columns: 480px 480px;
+    grid-template-rows: min-content min-content min-content min-content min-content;
+    padding: 0;
+    gap: 0;
+  }
 }
 
 .raffle-form__user-card {
   @media (min-width: $tablet-width) {
     grid-row: 1/2;
     margin-top: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/2;
+    margin-top: 80px;
   }
 }
 
@@ -45,12 +62,24 @@
     grid-row: 4/5;
     margin-top: 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    margin: 59px 10px 0 10px;
+  }
 }
 
 .raffle-form__user-contacts {
   @media (min-width: $tablet-width) {
     grid-row: 3/4;
     margin-top: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    margin: 6px 10px 0 10px;
   }
 }
 
@@ -59,6 +88,12 @@
     grid-row: 2/3;
     margin-top: 1px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin: 71px 10px 51px 35px;
+  }
 }
 
 .raffle-form__user-emotion {
@@ -66,12 +101,23 @@
     grid-row: 5/6;
     margin-top: 49px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/3;
+    grid-row: 4/5;
+    margin: 58px 10px 0 10px;
+  }
 }
 
 .raffle-form__buttons {
   @media (min-width: $tablet-width) {
     grid-row: -2/-1;
     margin-top: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/3;
+    margin: 64px 10px 0 10px;
   }
 }
 
@@ -87,6 +133,18 @@
   display: none;
 
   @media (min-width: $tablet-width) {
+    display: inline;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.raffle-form__br-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
     display: inline;
   }
 }
