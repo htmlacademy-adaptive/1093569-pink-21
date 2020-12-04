@@ -1,0 +1,63 @@
+.user-card {
+  @include text-reset;
+  border: 0;
+}
+
+.user-card__wrapper {
+  width: $mobile-width;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 35px 20px 25px 20px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    padding: 0;
+  }
+}
+
+.user-card__list {
+  @include list-reset;
+}
+
+.user-card__item {
+  margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: baseline;
+    margin-top: 33px;
+    margin-bottom: 47px;
+  }
+}
+
+.user-card__item-label {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #d22856;
+  margin-left: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-right: 19px;
+  }
+}
+
+.user-card__item-input {
+  width: 272px;
+  height: 59px;
+  margin-top: 3px;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+
+  &::placeholder {
+    color: #283645;
+    font-size: 18px;
+    padding-left: 18px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    flex-grow: 1;
+  }
+}

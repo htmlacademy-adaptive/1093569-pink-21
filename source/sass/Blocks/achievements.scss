@@ -1,1 +1,61 @@
-//zaglushka
+.achievements {
+  @include text-reset;
+  border: 0;
+  background-color: #f2f2f2;
+}
+
+.achievements__legend {
+  font-size: 14px;
+  text-align: center;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #d22856;
+  padding-top: 41px;
+  width: 100%;
+  background-color: inherit;
+}
+
+.achievements__wrapper {
+  width: $mobile-width;
+  margin: 0 auto 19px auto;
+  box-sizing: border-box;
+  padding: 0 20px 20px 20px;
+}
+
+.achievements__list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+}
+
+.achievements__item {
+  margin: 41px 0 5px 59px;
+}
+
+.achievements__item-label {
+  position: relative;
+  font-size: 18px;
+  line-height: 36px;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    border-radius: 3px;
+    left: -59px;
+    top: -7px;
+  }
+}
+
+.achievements__item-checkbox {
+  &:checked + .achievements__item-label::after {
+    content: url("../img/check.svg");
+    position: absolute;
+    left: -50px;
+    top: -5px;
+  }
+}
