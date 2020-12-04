@@ -43,6 +43,7 @@
 .raffle-form__achievements {
   @media (min-width: $tablet-width) {
     grid-row: 4/5;
+    margin-top: 50px;
   }
 }
 
@@ -63,12 +64,14 @@
 .raffle-form__user-emotion {
   @media (min-width: $tablet-width) {
     grid-row: 5/6;
+    margin-top: 49px;
   }
 }
 
 .raffle-form__buttons {
   @media (min-width: $tablet-width) {
     grid-row: -2/-1;
+    margin-top: 46px;
   }
 }
 
