@@ -1,1 +1,112 @@
-//zaglushka
+.travel-soft {
+  @include text-reset;
+  border: 0;
+  background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    padding-bottom: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 30px;
+  }
+}
+
+.travel-soft__legend {
+  font-size: 14px;
+  text-align: center;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #d22856;
+  width: 100%;
+  background-color: inherit;
+  padding-top: 39px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    background-color: inherit;
+    width: 369px;
+  }
+}
+
+.travel-soft__wrapper {
+  width: $mobile-width;
+  margin: 0 auto 20px auto;
+  box-sizing: border-box;
+  padding: 0 20px 20px 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.travel-soft__list {
+  @include list-reset;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.travel-soft__item {
+  margin-top: 33px;
+  margin-left: 70px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 48px;
+    margin-left: 119px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 49px;
+    margin-left: 133px;
+  }
+}
+
+.travel-soft__item-label {
+  position: relative;
+  font-size: 18px;
+  line-height: 42px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 28px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+    border-radius: 50%;
+    left: -70px;
+    top: -8px;
+
+    @media (min-width: $tablet-width) {
+      left: -61px;
+    }
+  }
+}
+
+.travel-soft__item-radio {
+  &:checked + .travel-soft__item-label::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #d22856;
+    left: -57px;
+    top: 5px;
+
+    @media (min-width: $tablet-width) {
+      left: -48px;
+      top: 6px;
+    }
+  }
+}

@@ -1,1 +1,70 @@
-//zaglushka
+.user-emotion {
+  @include text-reset;
+  border: 0;
+
+  @media (min-width: $tablet-width) {
+    border: 2px solid #e5e5e5;
+    padding-bottom: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 40px;
+  }
+}
+
+.user-emotion__legend {
+  padding-top: 39px;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #d22856;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 260px;
+  }
+}
+
+.user-emotion__wrapper {
+  width: $mobile-width;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.user-emotion__area {
+  border: 2px solid #e5e5e5;
+  border-radius: 3px;
+  margin-top: 16px;
+  width: 272px;
+  height: 193px;
+  resize: none;
+
+  &::placeholder {
+    font-size: 18px;
+    line-height: 30px;
+    color: #283645;
+    padding-top: 12px;
+    padding-left: 18px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 38px;
+    margin-left: 58px;
+    width: 492px;
+    height: 185px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 35px;
+    width: 812px;
+    height: 120px;
+  }
+}

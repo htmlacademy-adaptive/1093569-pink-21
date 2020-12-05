@@ -1,1 +1,133 @@
-//zaglushka
+.user-contacts {
+  @include text-reset;
+  border: 0;
+
+  @media (min-width: $tablet-width) {
+    border: 2px solid #e5e5e5;
+    padding-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 19px;
+  }
+}
+
+.user-contacts__legend {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin: 0 auto;
+    font-size: 14px;
+    text-align: center;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #d22856;
+    width: 259px;
+  }
+}
+
+.user-contacts__wrapper {
+  width: $mobile-width;
+  margin: 38px auto 19px auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.user-contacts__list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.user-contacts__item {
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 12px 0 58px;
+  }
+}
+
+.user-contacts__item-label {
+  position: relative;
+  align-self: baseline;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #d22856;
+  margin-left: 24px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    margin-top: 18px;
+    margin-left: 77px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 59px;
+      height: 59px;
+      background-color: #e5e5e5;
+      top: -79px;
+      left: 420px;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+    }
+
+    &--phone::before {
+      background-image: url("../img/phone-icon.svg");
+    }
+
+    &--mail::before {
+      background-image: url("../img/mail-icon.svg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 19px;
+
+    &::before {
+      left: 295px;
+    }
+  }
+}
+
+.user-contacts__item-input {
+  margin-top: 10px;
+  height: 57px;
+  width: 272px;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+
+  &::placeholder {
+    color: #283645;
+    font-size: 18px;
+    padding-left: 18px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 492px;
+    margin-top: 35px;
+    margin-left: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 367px;
+    margin-top: 34px;
+    margin-left: 0;
+  }
+}
