@@ -1,3 +1,10 @@
+.main-nav {
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+    padding-left: 173px;
+  }
+}
+
 .main-nav__item-link {
   font-size: 18px;
   font-weight: 700;
@@ -39,10 +46,9 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    min-height: 109px;
     align-items: center;
-    width: 700px;
-    justify-content: flex-end;
+    justify-content: space-between;
+    height: 100%;
   }
 }
 
@@ -54,17 +60,5 @@
 
   @media (min-width: $desktop-width) {
     border: 0;
-
-    &:nth-child(1) {
-      margin-right: 79px;
-    }
-
-    &:nth-child(2) {
-      margin-right: 86px;
-    }
-
-    &:nth-child(3) {
-      margin-right: 73px;
-    }
   }
 }

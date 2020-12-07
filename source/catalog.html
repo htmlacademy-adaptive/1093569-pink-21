@@ -51,115 +51,154 @@
     </header>
 
     <main class="page-main">
-
       <h1 class="page-main__catalog-title">Фотографии<br>пользователей</h1>
-
-      <div class="page-main__wrapper">
-        <section class="catalog-gallery">
-          <div class="catalog-gallery__wrapper">
-            <h2 class="catalog-gallery__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
-            <ul class="catalog-gallery__list">
-              <li class="catalog-gallery__list-item catalog-gallery__list-item--panorama">
-                <a href="#" class="catalog-gallery__list-link catalog-gallery__list-link--panorama" title="photo">
-                  <img src="https://via.placeholder.com/320x137" width="320" height="137" alt="Панорама дня">
-                </a>
-                <span class="catalog-gallery__list-user">Анна</span>
-                <span class="catalog-gallery__list-timer">(5 минут назад)</span>
-                <p class="catalog-gallery__list-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-                <span class="catalog-gallery__list-likes">Нравится: 215</span>
-              </li>
-              <li class="catalog-gallery__item">
+      <section class="catalog-gallery">
+        <header class="catalog-gallery__header">
+          <h2 class="catalog-gallery__header-title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
+          <article class="catalog-gallery__panorama">
+            <a href="#" class="catalog-gallery__panorama-photo" title="photo">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+                <img class="catalog-gallery__panorama-image" src="img/panorama.jpg" srcset="img/panorama@2x.jpg 2x" alt="Панорама дня">
+              </picture>
+            </a>
+            <div class="catalog-gallery__panorama-comment">
+              <h3 class="catalog-gallery__panorama-comment-user">Анна<span class="catalog-gallery__panorama-comment-timer">(5 минут назад)</span></h3>
+              <blockquote class="catalog-gallery__panorama-comment-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</blockquote>
+              <span class="catalog-gallery__panorama-comment-likes">Нравится: 215</span>
+            </div>
+          </article>
+        </header>
+        <div class="container-center">
+          <ul class="catalog-gallery__list">
+            <li class="catalog-gallery__item">
+              <article class="catalog-gallery__item-comment">
                 <a href="#" class="catalog-gallery__list-link" title="photo">
-                  <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="фото">
+                  <picture>
+                    <source media="(min-width: 960px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+                    <img class="catalog-gallery__list-image" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="фото">
+                  </picture>
                 </a>
-                <span class="catalog-gallery__list-user">Левон</span>
-                <span class="catalog-gallery__list-timer">(5 часов назад)</span>
-                <p class="catalog-gallery__list-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                <h3 class="catalog-gallery__list-user">Левон<span class="catalog-gallery__list-timer">(5 часов назад)</span></h3>
+                <blockquote class="catalog-gallery__list-text">Вчера он на луну летал, сегодня в руки к нам попал.</blockquote>
                 <span class="catalog-gallery__list-likes">Нравится: 356</span>
-              </li>
-              <li class="catalog-gallery__item">
+              </article>
+            </li>
+            <li class="catalog-gallery__item">
+              <article class="catalog-gallery__item-comment">
                 <a href="#" class="catalog-gallery__list-link" title="photo">
-                  <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="фото">
+                  <picture>
+                    <source media="(min-width: 960px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                    <img class="catalog-gallery__list-image" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="фото">
+                  </picture>
                 </a>
-                <span class="catalog-gallery__list-user">Антон</span>
-                <span class="catalog-gallery__list-timer">(12 часов назад)</span>
-                <p class="catalog-gallery__list-text">Соседи будут рады!</p>
+                <h3 class="catalog-gallery__list-user">Антон<span class="catalog-gallery__list-timer">(12 часов назад)</span></h3>
+                <blockquote class="catalog-gallery__list-text">Соседи будут рады!</blockquote>
                 <span class="catalog-gallery__list-likes">Нравится: 666</span>
-              </li>
-              <li class="catalog-gallery__item">
+              </article>
+            </li>
+            <li class="catalog-gallery__item">
+              <article class="catalog-gallery__item-comment">
                 <a href="#" class="catalog-gallery__list-link" title="photo">
-                  <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="фото">
+                  <picture>
+                    <source media="(min-width: 960px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                    <img class="catalog-gallery__list-image" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="фото">
+                  </picture>
                 </a>
-                <span class="catalog-gallery__list-user">Борис</span>
-                <span class="catalog-gallery__list-timer">(20 часов назад)</span>
-                <p class="catalog-gallery__list-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                <h3 class="catalog-gallery__list-user">Борис<span class="catalog-gallery__list-timer">(20 часов назад)</span></h3>
+                <blockquote class="catalog-gallery__list-text">Здесь могла быть ваша цитата о высоком и вечном.</blockquote>
                 <span class="catalog-gallery__list-likes">Нравится: 215</span>
-              </li>
-              <li class="catalog-gallery__item">
+              </article>
+            </li>
+            <li class="catalog-gallery__item">
+              <article class="catalog-gallery__item-comment">
                 <a href="#" class="catalog-gallery__list-link" title="photo">
-                  <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="фото">
+                  <picture>
+                    <source media="(min-width: 960px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+                    <img class="catalog-gallery__list-image" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="фото">
+                  </picture>
                 </a>
-                <span class="catalog-gallery__list-user">Сергей</span>
-                <span class="catalog-gallery__list-timer">(25 часов назад)!</span>
-                <p class="catalog-gallery__list-text">Самая кубанская в мире!</p>
+                <h3 class="catalog-gallery__list-user">Сергей<span class="catalog-gallery__list-timer">(25 часов назад)!</span></h3>
+                <blockquote class="catalog-gallery__list-text">Самая кубанская в мире!</blockquote>
                 <span class="catalog-gallery__list-likes">Нравится: 4</span>
-              </li>
-              <li class="catalog-gallery__item">
+              </article>
+            </li>
+            <li class="catalog-gallery__item">
+              <article class="catalog-gallery__item-comment">
                 <a href="#" class="catalog-gallery__list-link" title="photo">
-                  <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="фото">
+                  <picture>
+                    <source media="(min-width: 960px)" srcset="img/photo-5-desktop.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-5-tablet.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+                    <img class="catalog-gallery__list-image" src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="фото">
+                  </picture>
                 </a>
-                <span class="catalog-gallery__list-user">Максим</span>
-                <span class="catalog-gallery__list-timer">(40 часов назад)</span>
-                <p class="catalog-gallery__list-text">Где снег-то?</p>
+                <h3 class="catalog-gallery__list-user">Максим<span class="catalog-gallery__list-timer">(40 часов назад)</span></h3>
+                <blockquote class="catalog-gallery__list-text">Где снег-то?</blockquote>
                 <span class="catalog-gallery__list-likes">Нравится: 150</span>
-              </li>
-              <li class="catalog-gallery__item">
+              </article>
+            </li>
+            <li class="catalog-gallery__item">
+              <article class="catalog-gallery__item-comment">
                 <a href="#" class="catalog-gallery__list-link" title="photo">
-                  <img src="https://via.placeholder.com/280x180" width="280" height="180" alt="фото">
+                  <picture>
+                    <source media="(min-width: 960px)" srcset="img/photo-6-desktop.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+                    <source media="(min-width: 660px)" srcset="img/photo-6-tablet.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+                    <img class="catalog-gallery__list-image" src="img/photo-6-mobile.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="фото">
+                  </picture>
                 </a>
-                <span class="catalog-gallery__list-user">Надежда</span>
-                <span class="catalog-gallery__list-timer">(45 часов назад)</span>
-                <p class="catalog-gallery__list-text">Всем GM и взаимные лайки!</p>
+                <h3 class="catalog-gallery__list-user">Надежда<span class="catalog-gallery__list-timer">(45 часов назад)</span></h3>
+                <blockquote class="catalog-gallery__list-text">Всем GM и взаимные лайки!</blockquote>
                 <span class="catalog-gallery__list-likes">Нравится: 2560</span>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <section class="constructor">
-          <div class="constructor__wrapper">
-            <p class="constructor__slogan">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-            <form action="https://echo.htmlacademy.ru" method="post" class="constructor__form">
-              <div class="constructor__form-wrapper">
-                <div class="constructor__form-preview"></div>  <!--тут будет картинка-->
-                <div class="constructor__form-tools">
-                  <div class="constructor__form-tool constructor__form-tool--active">
-                    <img class="constructor__form-tool-icon constructor__form-tool-icon--active" src="https://via.placeholder.com/44x44" width="44" height="44" alt="иконка">   <!--тут будет иконка-->
-                    <div class="constructor__form-tool-range">
-                      <div class="constructor__form-tool-handle"></div>
-                    </div>
-                  </div>
-                  <div class="constructor__form-tool">
-                    <img class="constructor__form-tool-icon" src="https://via.placeholder.com/44x44" width="44" height="44" alt="иконка">   <!--тут будет иконка-->
-                    <div class="constructor__form-tool-range  constructor__form-tool-range--not-mobile">
-                      <div class="constructor__form-tool-handle"></div>
-                    </div>
-                  </div>
-                  <div class="constructor__form-tool">
-                    <img class="constructor__form-tool-icon" src="https://via.placeholder.com/44x44" width="44" height="44" alt="иконка">   <!--тут будет иконка-->
-                    <div class="constructor__form-tool-range constructor__form-tool-range--not-mobile">
-                      <div class="constructor__form-tool-handle"></div>
-                    </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="constructor">
+        <h2 class="visually-hidden">Инструмент обработки изображений</h2>
+        <div class="constructor__wrapper">
+          <h3 class="constructor__slogan">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h3>
+          <form action="https://echo.htmlacademy.ru" method="post" class="constructor__form">
+            <div class="constructor__form-wrapper">
+              <div class="constructor__form-preview">
+                <picture>
+                  <source media="(min-width: 660px)" srcset="img/constructor-tab-desk.jpg 1x, img/constructor-tab-desk@2x.jpg 2x">
+                  <img class="constructor__form-image" src="img/constructor-mobile.jpg" srcset="img/constructor-mobile@2x.jpg 2x" alt="Загруженное фото">
+                </picture>
+              </div>
+              <div class="constructor__form-tools">
+                <div class="constructor__form-tool constructor__form-tool--active">
+                  <img class="constructor__form-tool-icon constructor__form-tool-icon--active" src="https://via.placeholder.com/44x44" width="44" height="44" alt="иконка">   <!--тут будет иконка-->
+                  <div class="constructor__form-tool-range">
+                    <div class="constructor__form-tool-handle"></div>
                   </div>
                 </div>
-                <div class="constructor__form-buttons">
-                  <button class="constructor__form-button-submit" type="submit">Запостить</button>
-                  <button class="constructor__form-button-reset" type="reset" disabled>Отменить</button>
+                <div class="constructor__form-tool">
+                  <img class="constructor__form-tool-icon" src="https://via.placeholder.com/44x44" width="44" height="44" alt="иконка">   <!--тут будет иконка-->
+                  <div class="constructor__form-tool-range  constructor__form-tool-range--not-mobile">
+                    <div class="constructor__form-tool-handle"></div>
+                  </div>
+                </div>
+                <div class="constructor__form-tool">
+                  <img class="constructor__form-tool-icon" src="https://via.placeholder.com/44x44" width="44" height="44" alt="иконка">   <!--тут будет иконка-->
+                  <div class="constructor__form-tool-range constructor__form-tool-range--not-mobile">
+                    <div class="constructor__form-tool-handle"></div>
+                  </div>
                 </div>
               </div>
-            </form>
-          </div>
-        </section>
-      </div>
+              <div class="constructor__form-buttons">
+                <button class="constructor__form-button-submit" type="submit">Запостить</button>
+                <button class="constructor__form-button-reset" type="reset" disabled>Отменить</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
 
     <footer class="page-footer">
