@@ -57,12 +57,14 @@
 }
 
 .page-footer__social-ico {
-  &:hover circle {
-    opacity: 100%;
+  color: fade-out(#283645, 0.9);
+
+  &:hover {
+    color: fade-out(#283645, 0);
   }
 
-  &:active,
-  &:active circle {
+  &:active {
+    color: fade-out(#283645, 0.9);
     opacity: 30%;
   }
 }
@@ -91,11 +93,13 @@
 }
 
 .page-footer__copyright-ico {
-  &:hover path {
+  fill: #d22856;
+
+  &:hover {
     fill: #283645;
   }
 
-  &:active path {
+  &:active {
     fill-opacity: 30%;
   }
 }
@@ -106,6 +110,7 @@
 
 .page-footer__logo-img {
   display: none;
+  fill: #283645;
 
   &--tablet {
     display: inline;
@@ -119,11 +124,12 @@
     }
   }
 
-  &:hover path {
+  &:hover {
     fill: #d22856;
   }
 
-  &:active path:nth-child(-n+4) {
-    fill: fade-out(#283645, 0.7);
+  &:active {
+    fill: #283645;
+    opacity: 30%;
   }
 }

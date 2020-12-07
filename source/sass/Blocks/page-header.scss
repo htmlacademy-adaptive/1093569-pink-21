@@ -158,6 +158,7 @@
 
 .page-header__logo-img {
   display: none;
+  fill: #ffffff;
 
   &--mobile {
     display: inline;
@@ -179,11 +180,12 @@
     }
   }
 
-  &:hover path {
+  &:hover {
     fill: #d22856;
   }
 
-  &:active path {
-    fill: fade-out(#ffffff, 0.7);
+  &:active {
+    fill: #ffffff;
+    opacity: 30%;
   }
 }
