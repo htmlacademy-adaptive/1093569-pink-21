@@ -112,9 +112,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 122px;
+  min-height: 201px;
   padding: 38px 20px 41px 20px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .constructor__form-button {
