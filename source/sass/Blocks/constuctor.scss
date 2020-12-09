@@ -89,6 +89,10 @@
     left: 193px;
     top: -5px;
   }
+
+  &:active {
+    background-color: #d22856;
+  }
 }
 
 .constructor__form-buttons {
@@ -105,14 +109,37 @@
   height: 55px;
   font-size: 18px;
   font-weight: 700;
-  color: #d22856;
-  border: 3px solid #d22856;
+  border: 3px solid;
   border-radius: 40px;
+  cursor: pointer;
 
-  &--disabled {
+  &--reset {
     opacity: 10%;
     border-color: #283645;
     color: #283645;
+
+    &:hover {
+      opacity: 30%;
+    }
+
+    &:active {
+      background-color: #283645;
+      color: #ffffff;
+    }
+  }
+
+  &--submit {
+    color: #d22856;
+    border-color: #d22856;
+
+    &:hover {
+      background-color: #d22856;
+      color: #ffffff;
+    }
+
+    &:active {
+      color: fade-out(#ffffff, 0.7);
+    }
   }
 }
 
