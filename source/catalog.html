@@ -147,7 +147,7 @@
         <h3 class="constructor__slogan">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</h3>
         <div class="constructor__wrapper">
           <form action="https://echo.htmlacademy.ru" method="post" class="constructor__form">
-            <div class="container-center">
+            <div class="constructor__form-preview-wrapper">
               <div class="constructor__form-preview">
                 <picture>
                   <source media="(min-width: 660px)" srcset="img/constructor-tab-desk.jpg 1x, img/constructor-tab-desk@2x.jpg 2x">
@@ -155,36 +155,36 @@
                 </picture>
               </div>
             </div>
-            <div class="constructor__form-tools">
-              <label class="constructor__form-tool" for="crop-input">
-                <svg class="constructor__form-tool-crop constructor__form-tool-icon  constructor__form-tool-icon--active">
-                  <use xlink:href="#crop"></use>
-                </svg>
-                <div class="constructor__form-tool-range  constructor__form-tool-range--crop">
-                  <div class="constructor__form-tool-handle constructor__form-tool-handle--crop"></div>
-                </div>
-              </label>
-              <label class="constructor__form-tool" for="fill-input">
-                <svg class="constructor__form-tool-fill constructor__form-tool-icon">
-                  <use xlink:href="#fill"></use>
-                </svg>
-                <div class="constructor__form-tool-range  constructor__form-tool-range--fill">
-                  <div class="constructor__form-tool-handle constructor__form-tool-handle--fill"></div>
-                </div>
-              </label>
-              <label class="constructor__form-tool" for="contrast-input">
-                <svg class="constructor__form-tool-contrast constructor__form-tool-icon">
-                  <use xlink:href="#contrast"></use>
-                </svg>
-                <div class="constructor__form-tool-range constructor__form-tool-range--contrast">
-                  <div class="constructor__form-tool-handle constructor__form-tool-handle-contrast"></div>
-                </div>
-              </label>
-              <input class="visually-hidden" id="crop-input" name="crop-input" type="range" min="1" max="100" step="1" value="70">
-              <input class="visually-hidden" id="fill-input" name="fill-input" type="range" min="1" max="100" step="1" value="10">
-              <input class="visually-hidden" id="contrast-input" name="contrast-input" type="range" min="1" max="100" step="1" value="50">
-            </div>
-            <div class="container-center">
+            <div class="constructor__form-tools-wrapper">
+              <div class="constructor__form-tools">
+                <label class="constructor__form-tool" for="crop-input">
+                  <svg class="constructor__form-tool-crop constructor__form-tool-icon  constructor__form-tool-icon--active">
+                    <use xlink:href="#crop"></use>
+                  </svg>
+                  <div class="constructor__form-tool-range  constructor__form-tool-range--crop">
+                    <div class="constructor__form-tool-handle constructor__form-tool-handle--crop"></div>
+                  </div>
+                </label>
+                <label class="constructor__form-tool" for="fill-input">
+                  <svg class="constructor__form-tool-fill constructor__form-tool-icon">
+                    <use xlink:href="#fill"></use>
+                  </svg>
+                  <div class="constructor__form-tool-range  constructor__form-tool-range--fill">
+                    <div class="constructor__form-tool-handle constructor__form-tool-handle--fill"></div>
+                  </div>
+                </label>
+                <label class="constructor__form-tool" for="contrast-input">
+                  <svg class="constructor__form-tool-contrast constructor__form-tool-icon">
+                    <use xlink:href="#contrast"></use>
+                  </svg>
+                  <div class="constructor__form-tool-range constructor__form-tool-range--contrast">
+                    <div class="constructor__form-tool-handle constructor__form-tool-handle-contrast"></div>
+                  </div>
+                </label>
+                <input class="visually-hidden" id="crop-input" name="crop-input" type="range" min="1" max="100" step="1" value="70">
+                <input class="visually-hidden" id="fill-input" name="fill-input" type="range" min="1" max="100" step="1" value="10">
+                <input class="visually-hidden" id="contrast-input" name="contrast-input" type="range" min="1" max="100" step="1" value="50">
+              </div>
               <div class="constructor__form-buttons">
                   <button class="constructor__form-button constructor__form-button--submit" type="submit">Запостить</button>
                   <button class="constructor__form-button constructor__form-button--reset" type="reset">Отмена</button>

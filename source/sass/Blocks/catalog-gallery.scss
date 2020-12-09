@@ -9,6 +9,15 @@
   @media (min-resolution: 2dppx) {
     background-image: url("../img/back-mobile@2x.jpg");
   }
+
+  @media (min-width: $tablet-width) {
+    min-height: 439px;
+    background-image: url("../img/back-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.jpg");
+    }
+  }
 }
 
 .catalog-gallery__header-title {
@@ -19,6 +28,12 @@
   font-weight: 300;
   color: #ffffff;
   padding-top: 93px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+    padding-top: 175px;
+  }
 }
 
 .catalog-gallery__title {
@@ -28,15 +43,26 @@
   font-weight: 400;
   line-height: 30px;
   padding: 44px 20px 0 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    padding: 91px 47px 0 47px;
+  }
 }
 
 .catalog-gallery__panorama {
   width: $mobile-width;
   margin: 50px auto 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    margin: 77px auto 0 auto;
+  }
 }
 
 .catalog-gallery__panorama-photo {
   position: relative;
+  display: block;
 
   &::after {
     position: absolute;
@@ -45,9 +71,17 @@
     height: 36px;
     background-image: url("../img/panorama-day.svg");
     background-repeat: no-repeat;
-    top: -120px;
+    top: 0;
     right: 20px;
+
+    @media (min-width: $tablet-width) {
+      top: 57px;
+    }
   }
+}
+
+.catalog-gallery__panorama-image {
+  display: block;
 }
 
 .catalog-gallery__panorama-comment {
@@ -56,13 +90,26 @@
   min-height: 146px;
   margin-left: 20px;
   margin-right: 20px;
-  padding: 19px 10px 24px 17px;
+  padding: 22px 10px 24px 17px;
   background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    min-height: auto;
+    padding: 27px 59px 25px 30px;
+  }
 }
 
 .catalog-gallery__panorama-comment-user {
   @include text-reset;
   font-size: 14px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
 }
 
 .catalog-gallery__panorama-comment-timer {
@@ -76,6 +123,11 @@
   font-size: 14px;
   line-height: 24px;
   margin-top: 5px;
+
+  @media (min-width: $tablet-width) {
+    order: 3;
+    flex-grow: 1;
+  }
 }
 
 .catalog-gallery__panorama-comment-likes {
@@ -94,6 +146,15 @@
     background-image: url("../img/like-heart.svg");
     background-repeat: no-repeat;
     left: -32px;
+
+    @media (min-width: $tablet-width) {
+      left: 105px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    margin: 3px 0 0 0;
   }
 }
 
@@ -101,17 +162,41 @@
   list-style: none;
   padding: 0;
   margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
 
 .catalog-gallery__item {
   background-color: #f2f2f2;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
+}
+
+.catalog-gallery__item-link {
+  display: block;
+}
+
+.catalog-gallery__item-image {
+  display: block;
 }
 
 .catalog-gallery__item-comment {
   display: flex;
   flex-direction: column;
-  padding: 19px 10px 24px 17px;
+  padding: 22px 10px 24px 17px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 118px;
+    padding: 27px 10px 10px 30px;
+  }
 }
 
 .catalog-gallery__item-user {
@@ -148,5 +233,25 @@
     background-image: url("../img/like-heart.svg");
     background-repeat: no-repeat;
     left: -31px;
+
+    @media (min-width: $tablet-width) {
+      left: 227px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: auto 0 19px 0;
+  }
+}
+
+.catalog-gallery__br-mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.catalog-gallery__panorama-br-mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

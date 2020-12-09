@@ -13,11 +13,23 @@
   margin-top: 42px;
 }
 
+.constructor__form-preview {
+  width: $mobile-width;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.constructor__form-image {
+  display: block;
+}
+
 .constructor__form-tools {
   width: $mobile-width;
   margin: 0 auto;
-  min-height: 159px;
-  padding: 0 51px 34px 39px;
+  min-height: 162px;
+  padding: 4px 51px 34px 39px;
   display: flex;
   position: relative;
   justify-content: space-around;
@@ -66,7 +78,7 @@
   width: 240px;
   height: 2px;
   background-color: #283645;
-  top: 122px;
+  top: 125px;
   left: 40px;
 
   &--crop {
@@ -96,12 +108,13 @@
 }
 
 .constructor__form-buttons {
+  width: $mobile-width;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 122px;
-  padding-top: 38px;
-  padding-bottom: 41px;
+  padding: 38px 20px 41px 20px;
+  margin: 0 auto;
 }
 
 .constructor__form-button {
