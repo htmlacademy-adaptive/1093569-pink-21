@@ -685,15 +685,13 @@ template {
       padding: 91px 47px 0 47px; } }
 
 .catalog-gallery__panorama {
-  width: 320px;
+  width: 100%;
   margin: 50px auto 0 auto; }
   @media (min-width: 660px) {
     .catalog-gallery__panorama {
-      width: 660px;
       margin: 77px auto 0 auto; } }
   @media (min-width: 960px) {
     .catalog-gallery__panorama {
-      width: 1200px;
       margin: 89px auto 0 auto; } }
 
 .catalog-gallery__panorama-photo {
@@ -717,7 +715,9 @@ template {
         right: 130px; } }
 
 .catalog-gallery__panorama-image {
-  display: block; }
+  display: block;
+  width: 100%;
+  margin: 0 auto; }
 
 .catalog-gallery__panorama-comment {
   display: flex;
