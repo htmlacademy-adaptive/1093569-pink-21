@@ -18,6 +18,15 @@
       background-image: url("../img/back-tablet@2x.jpg");
     }
   }
+
+  @media (min-width: $desktop-width) {
+    min-height: 394px;
+    background-image: url("../img/back-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.jpg");
+    }
+  }
 }
 
 .catalog-gallery__header-title {
@@ -33,6 +42,10 @@
     font-size: 50px;
     line-height: 68px;
     padding-top: 175px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 169px;
   }
 }
 
@@ -58,6 +71,11 @@
     width: $tablet-width;
     margin: 77px auto 0 auto;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    margin: 89px auto 0 auto;
+  }
 }
 
 .catalog-gallery__panorama-photo {
@@ -76,6 +94,11 @@
 
     @media (min-width: $tablet-width) {
       top: 57px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 54px;
+      right: 130px;
     }
   }
 }
@@ -100,6 +123,12 @@
     align-content: space-between;
     min-height: auto;
     padding: 27px 59px 25px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 130px;
+    margin-right: 130px;
+    padding: 28px 37px 23px 27px;
   }
 }
 
@@ -156,18 +185,26 @@
     order: 2;
     margin: 3px 0 0 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 2px 23px 0 0;
+  }
 }
 
 .catalog-gallery__list {
   list-style: none;
-  padding: 0;
-  margin-top: 20px;
+  margin: 0;
+  padding: 20px 0 0 0;
 
   @media (min-width: $tablet-width) {
-    margin-top: 50px;
+    padding: 50px 0 16px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 50px 10px 0 10px;
   }
 }
 
@@ -177,6 +214,10 @@
 
   @media (min-width: $tablet-width) {
     width: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 53px;
   }
 }
 
@@ -196,6 +237,10 @@
   @media (min-width: $tablet-width) {
     min-height: 118px;
     padding: 27px 10px 10px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 28px 10px 10px 27px;
   }
 }
 
@@ -237,6 +282,10 @@
     @media (min-width: $tablet-width) {
       left: 227px;
     }
+
+    @media (min-width: $desktop-width) {
+      left: 229px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -247,6 +296,10 @@
 .catalog-gallery__br-mobile {
   @media (min-width: $tablet-width) {
     display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline;
   }
 }
 
