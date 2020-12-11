@@ -2243,8 +2243,7 @@ template {
       padding: 11px 20px 0 0; } }
   @media (min-width: 960px) {
     .download-attachment__annotation {
-      padding-top: 28px;
-      padding-left: 3px; } }
+      padding-top: 28px; } }
 
 .find-us__wrapper {
   padding-top: 19px; }
@@ -2348,9 +2347,9 @@ template {
 
 .find-us__map {
   position: relative;
-  margin: 0;
+  margin: 35px 0 0 0;
   width: 100%;
-  height: 235px;
+  height: 200px;
   background-image: url("../img/map-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -2365,7 +2364,7 @@ template {
     left: 0;
     content: "";
     width: 100%;
-    height: 68px;
+    height: 33px;
     background-image: url("../img/triangle.svg");
     background-repeat: no-repeat;
     background-position: center top;
@@ -2373,24 +2372,26 @@ template {
     z-index: 2; }
   @media (min-width: 660px) {
     .find-us__map {
-      height: 400px;
+      height: 374px;
+      margin-top: 25px;
       background-image: url("../img/map-tablet.jpg"); } }
   @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 660px) and (min-resolution: 2dppx) {
     .find-us__map {
       background-image: url("../img/map-tablet@2x.jpg"); } }
   @media (min-width: 660px) {
       .find-us__map::before {
-        height: 93px; } }
+        height: 69px; } }
   @media (min-width: 960px) {
     .find-us__map {
-      height: 523px;
+      height: 502px;
+      margin-top: 21px;
       background-image: url("../img/map-desktop.jpg"); } }
   @media (min-width: 960px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 960px) and (min-resolution: 2dppx) {
     .find-us__map {
       background-image: url("../img/map-desktop@2x.jpg"); } }
   @media (min-width: 960px) {
       .find-us__map::before {
-        height: 153px; } }
+        height: 131px; } }
 
 .preview {
   display: none; }
