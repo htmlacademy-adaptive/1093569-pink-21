@@ -122,9 +122,9 @@
 
 .find-us__map {
   position: relative;
-  margin: 0;
+  margin: 35px 0 0 0;
   width: 100%;
-  height: 235px;
+  height: 200px;
   background-image: url("../img/map-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -141,7 +141,7 @@
     left: 0;
     content: "";
     width: 100%;
-    height: 68px;
+    height: 33px;
     background-image: url("../img/triangle.svg");
     background-repeat: no-repeat;
     background-position: center top;
@@ -150,7 +150,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    height: 400px;
+    height: 374px;
+    margin-top: 25px;
     background-image: url("../img/map-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -158,12 +159,13 @@
     }
 
     &::before {
-      height: 93px;
+      height: 69px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    height: 523px;
+    height: 502px;
+    margin-top: 21px;
     background-image: url("../img/map-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
@@ -171,7 +173,7 @@
     }
 
     &::before {
-      height: 153px;
+      height: 131px;
     }
   }
 }
