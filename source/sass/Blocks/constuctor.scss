@@ -115,7 +115,7 @@
   }
 }
 
-.constructor__form-tool-icon {
+.constructor__form-icon {
   fill: #283645;
   opacity: 30%;
   cursor: pointer;
@@ -149,7 +149,7 @@
   }
 }
 
-.constructor__form-tool-crop {
+.constructor__form-crop {
   width: 44px;
   height: 44px;
 
@@ -164,7 +164,7 @@
   }
 }
 
-.constructor__form-tool-fill {
+.constructor__form-fill {
   width: 48px;
   height: 43px;
 
@@ -179,7 +179,7 @@
   }
 }
 
-.constructor__form-tool-contrast {
+.constructor__form-contrast {
   width: 32px;
   height: 32px;
 
@@ -195,7 +195,7 @@
   }
 }
 
-.constructor__form-tool-range {
+.constructor__form-range {
   display: none;
   position: absolute;
   width: 240px;
@@ -222,15 +222,16 @@
   }
 }
 
-.constructor__form-tool-handle {
+.constructor__form-handle {
   display: none;
   position: absolute;
-  width: 10px;
-  height: 10px;
+  width: 14px;
+  height: 14px;
   background-color: #ffffff;
   border: 2px solid #d22856;
   cursor: pointer;
   border-radius: 50%;
+  padding: 0;
 
   &--crop {
     display: block;
