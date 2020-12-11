@@ -986,67 +986,67 @@ template {
     align-items: center;
     border-bottom: 1px solid rgba(40, 54, 69, 0.1); } }
 
-.constructor__form-tool-icon {
+.constructor__form-icon {
   fill: #283645;
   opacity: 30%;
   cursor: pointer; }
-  .constructor__form-tool-icon:hover {
+  .constructor__form-icon:hover {
     opacity: 50%; }
-  .constructor__form-tool-icon--active {
+  .constructor__form-icon--active {
     fill: #d22856;
     opacity: 100%; }
-    .constructor__form-tool-icon--active:hover {
+    .constructor__form-icon--active:hover {
       opacity: 100%; }
   @media (min-width: 660px) {
-    .constructor__form-tool-icon {
+    .constructor__form-icon {
       margin-left: 5px;
       fill: #d22856;
       opacity: 100%; }
-      .constructor__form-tool-icon:hover {
+      .constructor__form-icon:hover {
         fill: #d22856;
         opacity: 100%; } }
   @media (min-width: 960px) {
-    .constructor__form-tool-icon {
+    .constructor__form-icon {
       margin: 0; } }
 
-.constructor__form-tool-crop {
+.constructor__form-crop {
   width: 44px;
   height: 44px; }
   @media (min-width: 660px) {
-    .constructor__form-tool-crop {
+    .constructor__form-crop {
       width: 22px;
       height: 22px; } }
   @media (min-width: 960px) {
-    .constructor__form-tool-crop {
+    .constructor__form-crop {
       width: 44px;
       height: 44px; } }
 
-.constructor__form-tool-fill {
+.constructor__form-fill {
   width: 48px;
   height: 43px; }
   @media (min-width: 660px) {
-    .constructor__form-tool-fill {
+    .constructor__form-fill {
       width: 24px;
       height: 22px; } }
   @media (min-width: 960px) {
-    .constructor__form-tool-fill {
+    .constructor__form-fill {
       width: 48px;
       height: 43px; } }
 
-.constructor__form-tool-contrast {
+.constructor__form-contrast {
   width: 32px;
   height: 32px; }
   @media (min-width: 660px) {
-    .constructor__form-tool-contrast {
+    .constructor__form-contrast {
       width: 16px;
       height: 16px; } }
   @media (min-width: 960px) {
-    .constructor__form-tool-contrast {
+    .constructor__form-contrast {
       width: 32px;
       height: 32px;
       margin-left: 6px; } }
 
-.constructor__form-tool-range {
+.constructor__form-range {
   display: none;
   position: absolute;
   width: 240px;
@@ -1054,57 +1054,58 @@ template {
   background-color: #283645;
   top: 125px;
   left: 40px; }
-  .constructor__form-tool-range--crop {
+  .constructor__form-range--crop {
     display: block; }
   @media (min-width: 660px) {
-    .constructor__form-tool-range {
+    .constructor__form-range {
       display: block;
       position: static;
       width: 202px;
       margin-left: auto;
       margin-right: 18px; } }
   @media (min-width: 960px) {
-    .constructor__form-tool-range {
+    .constructor__form-range {
       width: 288px;
       margin-right: 29px; } }
 
-.constructor__form-tool-handle {
+.constructor__form-handle {
   display: none;
   position: absolute;
-  width: 10px;
-  height: 10px;
+  width: 14px;
+  height: 14px;
   background-color: #ffffff;
   border: 2px solid #d22856;
   cursor: pointer;
-  border-radius: 50%; }
-  .constructor__form-tool-handle--crop {
+  border-radius: 50%;
+  padding: 0; }
+  .constructor__form-handle--crop {
     display: block;
     left: 193px;
     top: -5px; }
   @media (min-width: 660px) {
-    .constructor__form-tool-handle {
+    .constructor__form-handle {
       display: block; }
-      .constructor__form-tool-handle--crop {
+      .constructor__form-handle--crop {
         left: 201px;
         top: 29px; } }
     @media (min-width: 660px) and (min-width: 960px) {
-      .constructor__form-tool-handle--crop {
+      .constructor__form-handle--crop {
         left: 166px; } }
   @media (min-width: 660px) {
-      .constructor__form-tool-handle--fill {
+      .constructor__form-handle--fill {
         top: 101px;
         left: 79px; } }
     @media (min-width: 660px) and (min-width: 960px) {
-      .constructor__form-tool-handle--fill {
+      .constructor__form-handle--fill {
         left: 344px; } }
   @media (min-width: 660px) {
-      .constructor__form-tool-handle--contrast {
+      .constructor__form-handle--contrast {
         top: 173px;
         left: 150px; } }
     @media (min-width: 660px) and (min-width: 960px) {
-      .constructor__form-tool-handle--contrast {
+      .constructor__form-handle--contrast {
         left: 257px; } }
-  .constructor__form-tool-handle:active {
+  .constructor__form-handle:active {
     background-color: #d22856; }
 
 .constructor__form-buttons {
@@ -2352,7 +2353,7 @@ template {
   height: 235px;
   background-image: url("../img/map-mobile.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-position-y: bottom;
   z-index: 1; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
@@ -2360,17 +2361,16 @@ template {
       background-image: url("../img/map-mobile@2x.jpg"); } }
   .find-us__map::before {
     position: absolute;
-    top: -56px;
+    top: 0;
     left: 0;
     content: "";
-    width: 1200px;
-    height: 123px;
-    background-image: url("../img/triangle-footer.svg");
+    width: 100%;
+    height: 68px;
+    background-image: url("../img/triangle.svg");
     background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 2;
-    margin-left: 50%;
-    transform: translateX(-50%); }
+    background-position: center top;
+    background-size: auto 100%;
+    z-index: 2; }
   @media (min-width: 660px) {
     .find-us__map {
       height: 400px;
@@ -2380,7 +2380,7 @@ template {
       background-image: url("../img/map-tablet@2x.jpg"); } }
   @media (min-width: 660px) {
       .find-us__map::before {
-        top: -33px; } }
+        height: 93px; } }
   @media (min-width: 960px) {
     .find-us__map {
       height: 523px;
@@ -2390,7 +2390,7 @@ template {
       background-image: url("../img/map-desktop@2x.jpg"); } }
   @media (min-width: 960px) {
       .find-us__map::before {
-        top: 0; } }
+        height: 153px; } }
 
 .preview {
   display: none; }
