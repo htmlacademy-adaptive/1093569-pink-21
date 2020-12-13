@@ -1,0 +1,145 @@
+.modals {
+  position: fixed;
+  box-sizing: border-box;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 5px 17px -10px #000000;
+}
+
+.modals__buttons {
+  width: 300px;
+  height: 64px;
+  background-color: #2aab6d;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  border: 0;
+  border-radius: 3px;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: fade-out(#ffffff, 0.7);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+    color: #ffffff;
+  }
+
+  &--success {
+    @media (min-width: $desktop-width) {
+      width: 460px;
+    }
+  }
+}
+
+.modals__text-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.modals__text-message {
+  margin: 0;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.modal-error {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 460px;
+  min-height: 363px;
+
+  @media (min-width: $desktop-width) {
+    min-width: 780px;
+    min-height: 377px;
+  }
+}
+
+.modal-error__text {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 41px;
+  padding-bottom: 33px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 39px;
+    padding-bottom: 63px;
+  }
+}
+
+.modal-error__button-block {
+  min-height: 115px;
+
+  @media (min-width: $desktop-width) {
+    background-color: #f2f2f2;
+    min-height: 115px;
+    padding-top: 50px;
+  }
+}
+
+.modal-success {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 460px;
+  min-height: 432px;
+
+  @media (min-width: $desktop-width) {
+    min-width: 780px;
+    min-height: 377px;
+  }
+}
+
+.modal-success__text {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 30px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 39px;
+    padding-bottom: 39px;
+  }
+}
+
+.modal-success__button-block {
+  min-height: 113px;
+  padding-top: 49px;
+  background-color: #f2f2f2;
+
+  @media (min-width: $desktop-width) {
+    min-height: 113px;
+    padding-top: 50px;
+  }
+}
+
+.modals__br-tablet {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.modals__br-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
+}

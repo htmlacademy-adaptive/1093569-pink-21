@@ -42,7 +42,7 @@
       </header>
       <section class="raffle-form">
         <h1 class="visually-hidden">Анкета для участия в конкурсе</h1>
-        <form action="https://echo.htmlacademy.ru" method="post" class="raffle-form">
+        <form action="https://echo.htmlacademy.ru" method="post" class="raffle-form"> <!-- Модификаторы --error и --success открывают соответсвующие модальные окна -->
           <h2 class="raffle-form__rules">Поделитесь своей историей и получите шанс выиграть<br class="raffle-form__br-tablet"> ценный приз — 1000 миль на<br class="raffle-form__br-desktop"> вашу бонусную карту! <span>Пожалуйста, заполните форму ниже:</span> </h2>
           <div class="raffle-form__wrapper">
             <fieldset class="raffle-form__user-card user-card">
@@ -140,6 +140,24 @@
                 <small class="form-buttons__recommendation"><span class="form-buttons__recommendation-star">*</span> — обязательные <span class="form-buttons__recommendation-span">для заполнения</span> поля</small>
               </div>
             </fieldset>
+          </div>
+            <div class="modal-error modals">
+              <div class="modal__error-text">
+                <h3 class="modals__text-title">Что-то пошло<br class="modals__br-tablet"> не так!</h3>
+                <p class="modals__text-message">Проверьте поля, выделенные<br class="modals__br-tablet"> красным,<br class="modals__br-desktop"> скорее всего вы забыли<br class="modals__br-tablet"> их заполнить</p>
+              </div>
+              <div class="modal-error__button-block">
+                <button class="modals__buttons" type="button">ok</button>
+              </div>
+            </div>
+          <div class="modal-success modals">
+            <div class="modal-success__text">
+              <h3 class="modals__text-title">Ваша заявка<br class="modals__br-tablet"> отправлена</h3>
+              <p class="modals__text-message">Спасибо за ваше участие, ваша<br class="modals__br-tablet"> заявка уже<br class="modals__br-desktop"> поступила к нам. В<br class="modals__br-tablet"> ближайшее время мы<br class="modals__br-desktop"> рассмотрим<br class="modals__br-tablet"> ее и оповестим вас.</p>
+            </div>
+            <div class="modal-success__button-block">
+              <button class="modals__buttons modals__buttons--success" type="button">Закрыть окно</button>
+            </div>
           </div>
         </form>
       </section>

@@ -1,3 +1,21 @@
+.raffle-form {
+  &--error {
+    .modal-error {
+      @media (min-width: $tablet-width) {
+        display: flex;
+      }
+    }
+  }
+
+  &--success {
+    .modal-success {
+      @media (min-width: $tablet-width) {
+        display: flex;
+      }
+    }
+  }
+}
+
 .raffle-form__rules {
   text-align: center;
   font-size: 14px;
