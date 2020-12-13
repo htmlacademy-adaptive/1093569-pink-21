@@ -62,7 +62,7 @@ const images = () => {
     .pipe(imagemin([
       imagemin.mozjpeg({
         quality: 75,
-        progressive:true
+        progressive: true
       }),
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.svgo()
@@ -98,8 +98,8 @@ exports.sprite = sprite;
 
 const copy = () => {
   return gulp.src([
-    "source/fonts/*.{woff2,woff}",
-    "source/*.ico"
+      "source/fonts/*.{woff2,woff}",
+      "source/*.ico"
     ],
     {
       base: "source"
@@ -177,6 +177,6 @@ exports.default = gulp.series(
     createWebp
   ),
   gulp.series(
-   server,
-   watcher
+    server,
+    watcher
   ));
