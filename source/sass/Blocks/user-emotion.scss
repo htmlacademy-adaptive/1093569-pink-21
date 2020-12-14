@@ -47,6 +47,14 @@
   height: 193px;
   resize: none;
 
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:focus {
+    outline-color: #d22856;
+  }
+
   &::placeholder {
     font-size: 18px;
     line-height: 30px;

@@ -130,6 +130,14 @@
     margin: 0;
     word-wrap: break-word;
   }
+
+  &:hover::before {
+    border-color: #283645;
+  }
+
+  &:active::before {
+    border-color: #d22856;
+  }
 }
 
 .achievements__item-checkbox {
