@@ -130,4 +130,12 @@
     margin-top: 34px;
     margin-left: 0;
   }
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:focus {
+    outline-color: #d22856;
+  }
 }

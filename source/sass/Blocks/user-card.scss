@@ -73,4 +73,12 @@
   @media (min-width: $desktop-width) {
     margin-right: 35px;
   }
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:focus {
+    outline-color: #d22856;
+  }
 }
