@@ -74,21 +74,15 @@
 
   @media (min-width: $tablet-width) {
     font-size: 40px;
-    padding-left: 19px;
+    padding-left: 35px;
+    padding-right: 14px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 50px;
     padding-left: 40px;
     line-height: 68px;
-  }
-}
-
-.download-attachment__slogan-br {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: inline;
+    padding-right: 0;
   }
 }
 
@@ -102,7 +96,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 102px;
+    margin-top: 99px;
   }
 
   &::after {
@@ -125,7 +119,7 @@
       width: 660px;
       height: 545px;
       background-size: 884px 545px;
-      top: -20px;
+      top: -19px;
       left: 45px;
     }
 
@@ -133,7 +127,7 @@
       width: 1050px;
       height: 645px;
       background-size: cover;
-      top: -2px;
+      top: 0;
       left: 199px;
     }
   }
@@ -198,7 +192,7 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 10px;
-    margin-top: 36px;
+    margin-top: 38px;
   }
 }
 
