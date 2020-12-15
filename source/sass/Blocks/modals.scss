@@ -74,10 +74,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 41px 77px 33px 77px;
+  padding: 41px 77px 33px;
 
   @media (min-width: $desktop-width) {
-    padding: 39px 200px 63px 200px;
+    padding: 39px 200px 63px;
   }
 }
 
@@ -111,10 +111,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 40px 77px 30px 77px;
+  padding: 40px 77px 30px;
 
   @media (min-width: $desktop-width) {
-    padding: 39px 190px 39px 190px;
+    padding: 39px 190px 39px;
   }
 }
 
