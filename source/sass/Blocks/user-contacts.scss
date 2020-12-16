@@ -29,7 +29,7 @@
 
 .user-contacts__wrapper {
   width: $mobile-width;
-  margin: 38px auto 19px auto;
+  margin: 38px auto 19px;
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
@@ -129,5 +129,13 @@
     width: 367px;
     margin-top: 34px;
     margin-left: 0;
+  }
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:focus {
+    outline-color: #d22856;
   }
 }

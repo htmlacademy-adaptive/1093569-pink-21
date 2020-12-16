@@ -7,7 +7,7 @@
   width: $mobile-width;
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 35px 20px 25px 20px;
+  padding: 35px 20px 25px;
 
   @media (min-width: $tablet-width) {
     width: auto;
@@ -72,5 +72,13 @@
 
   @media (min-width: $desktop-width) {
     margin-right: 35px;
+  }
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:focus {
+    outline-color: #d22856;
   }
 }

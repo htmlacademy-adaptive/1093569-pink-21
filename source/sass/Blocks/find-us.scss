@@ -122,7 +122,7 @@
 
 .find-us__map {
   position: relative;
-  margin: 35px 0 0 0;
+  margin: 35px 0 0;
   width: 100%;
   height: 200px;
   background-image: url("../img/map-mobile.jpg");
@@ -137,7 +137,7 @@
 
   &::before {
     position: absolute;
-    top: 0;
+    top: -1px;
     left: 0;
     content: "";
     width: 100%;
@@ -176,4 +176,9 @@
       height: 131px;
     }
   }
+}
+
+.find-us__map-iframe {
+  width: 100%;
+  height: 100%;
 }

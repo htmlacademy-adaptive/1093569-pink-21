@@ -19,6 +19,7 @@
 }
 
 .page-footer__logo {
+  cursor: pointer;
   margin-top: 40px;
 
   @media (min-width: $tablet-width) {

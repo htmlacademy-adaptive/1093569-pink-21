@@ -22,7 +22,7 @@
   color: #d22856;
   width: 100%;
   background-color: inherit;
-  padding-top: 39px;
+  padding: 39px 2px 0;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -35,7 +35,7 @@
   width: $mobile-width;
   margin: 0 auto 20px auto;
   box-sizing: border-box;
-  padding: 0 20px 20px 20px;
+  padding: 0 20px 20px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -91,6 +91,14 @@
       left: -61px;
     }
   }
+
+  &:hover::before {
+    border-color: #283645;
+  }
+
+  &:active::before {
+    border-color: #d22856;
+  }
 }
 
 .travel-soft__item-radio {
@@ -108,5 +116,9 @@
       left: -48px;
       top: 6px;
     }
+  }
+
+  &:focus + .travel-soft__item-label::before {
+    outline: 2px solid #d22856;
   }
 }

@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 12px;
+    padding-bottom: 10px;
   }
 }
 
@@ -37,6 +37,19 @@
   background-color: #2aab6d;
   border: 0;
   border-radius: 3px;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: fade-out(#ffffff, 0.7);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+    color: #ffffff;
+  }
 
   @media (min-width: $tablet-width) {
     width: 300px;
