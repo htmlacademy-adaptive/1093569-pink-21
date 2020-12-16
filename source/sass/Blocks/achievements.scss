@@ -154,4 +154,8 @@
       top: -1px;
     }
   }
+
+  &:focus + .achievements__item-label::before {
+    outline: 2px solid #d22856;
+  }
 }

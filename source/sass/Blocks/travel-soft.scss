@@ -117,4 +117,8 @@
       top: 6px;
     }
   }
+
+  &:focus + .travel-soft__item-label::before {
+    outline: 2px solid #d22856;
+  }
 }

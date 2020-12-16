@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
-    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" type="font/woff2" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page">
     <header class="page-header">
       <div class="page-header__wrapper ">
         <div class="page-header__logo">
-          <a href="index.html" class="page-header__logo-link" title="logotype">
+          <a href="index.html" class="page-header__logo-link" title="logotype" aria-label="pink-logo">
             <svg class="page-header__logo-img page-header__logo-img--mobile" width="74" height="23" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="img/sprite.svg#logo-wb-mobile"></use>
             </svg>
@@ -27,8 +27,8 @@
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item"><a href="index.html" class="main-nav__item-link" title="Home">Главная</a></li>
-            <li class="main-nav__item"><a href="catalog.html" class="main-nav__item-link main-nav__item-link--active" title="Photo">Фотографии</a></li>
-            <li class="main-nav__item"><a href="form.html" class="main-nav__item-link" title="Contest">Конкурс</a></li>
+            <li class="main-nav__item"><a href="catalog.html" class="main-nav__item-link" title="Photo">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html" class="main-nav__item-link main-nav__item-link--active" title="Contest">Конкурс</a></li>
             <li class="main-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__item-link" title="HTML Academy">HTML Academy</a></li>
           </ul>
         </nav>
@@ -41,7 +41,7 @@
         </header>
         <h2 class="catalog-gallery__title">Взгляните на фотографии, которые выкладывают пользователи! Видите,&nbsp;как&nbsp;не&nbsp;хватает&nbsp;ваших?</h2>
         <article class="catalog-gallery__panorama">
-          <a href="#" class="catalog-gallery__panorama-photo" title="photo">
+          <a href="#" class="catalog-gallery__panorama-photo" title="photo" aria-label="panorama">
             <picture>
               <source type="image/webp" media="(min-width: 960px)" srcset="img/panorama-desktop.webp 1x, img/panorama-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet.webp 1x, img/panorama-tablet@2x.webp 2x">
@@ -60,7 +60,7 @@
         <div class="container-center">
           <ul class="catalog-gallery__list">
             <li class="catalog-gallery__item">
-                <a href="#" class="catalog-gallery__item-link" title="photo">
+                <a href="#" class="catalog-gallery__item-link" title="photo" aria-label="photo">
                 <picture>
                   <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-1-desktop.webp 1x, img/photo-1-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-1-tablet.webp 1x, img/photo-1-tablet@2x.webp 2x">
@@ -77,7 +77,7 @@
               </div>
             </li>
             <li class="catalog-gallery__item">
-              <a href="#" class="catalog-gallery__item-link" title="photo">
+              <a href="#" class="catalog-gallery__item-link" title="photo" aria-label="photo">
                 <picture>
                   <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-2-desktop.webp 1x, img/photo-2-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-2-tablet.webp 1x, img/photo-2-tablet@2x.webp 2x">
@@ -94,7 +94,7 @@
               </div>
             </li>
             <li class="catalog-gallery__item">
-              <a href="#" class="catalog-gallery__item-link" title="photo">
+              <a href="#" class="catalog-gallery__item-link" title="photo" aria-label="photo">
                 <picture>
                   <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-3-desktop.webp 1x, img/photo-3-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-3-tablet.webp 1x, img/photo-3-tablet@2x.webp 2x">
@@ -111,7 +111,7 @@
               </div>
             </li>
             <li class="catalog-gallery__item">
-              <a href="#" class="catalog-gallery__item-link" title="photo">
+              <a href="#" class="catalog-gallery__item-link" title="photo" aria-label="photo">
                 <picture>
                   <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-4-desktop.webp 1x, img/photo-4-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-4-tablet.webp 1x, img/photo-4-tablet@2x.webp 2x">
@@ -128,7 +128,7 @@
               </div>
             </li>
             <li class="catalog-gallery__item">
-              <a href="#" class="catalog-gallery__item-link" title="photo">
+              <a href="#" class="catalog-gallery__item-link" title="photo" aria-label="photo">
                 <picture>
                   <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-5-desktop.webp 1x, img/photo-5-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-5-tablet.webp 1x, img/photo-5-tablet@2x.webp 2x">
@@ -145,7 +145,7 @@
               </div>
             </li>
             <li class="catalog-gallery__item">
-              <a href="#" class="catalog-gallery__item-link" title="photo">
+              <a href="#" class="catalog-gallery__item-link" title="photo" aria-label="photo">
                 <picture>
                   <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-6-desktop.webp 1x, img/photo-6-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-6-tablet.webp 1x, img/photo-6-tablet@2x.webp 2x">
@@ -186,7 +186,7 @@
                     <use xlink:href="img/sprite.svg#crop"></use>
                   </svg>
                   <span class="constructor__form-range  constructor__form-range--crop">
-                    <button type="button" class="constructor__form-handle constructor__form-handle--crop"></button>
+                    <button type="button" class="constructor__form-handle constructor__form-handle--crop" aria-label="обрезать картинку"></button>
                   </span>
                 </label>
                 <label class="constructor__form-tool" for="fill-input">
@@ -194,7 +194,7 @@
                     <use xlink:href="img/sprite.svg#fill"></use>
                   </svg>
                   <span class="constructor__form-range  constructor__form-range--fill">
-                    <button type="button" class="constructor__form-handle constructor__form-handle--fill"></button>
+                    <button type="button" class="constructor__form-handle constructor__form-handle--fill" aria-label="Выбрать цвет заливки"></button>
                   </span>
                 </label>
                 <label class="constructor__form-tool" for="contrast-input">
@@ -202,16 +202,16 @@
                     <use xlink:href="img/sprite.svg#contrast"></use>
                   </svg>
                   <span class="constructor__form-range constructor__form-range--contrast">
-                    <button type="button" class="constructor__form-handle constructor__form-handle--contrast"></button>
+                    <button type="button" class="constructor__form-handle constructor__form-handle--contrast" aria-label="Настройка контрастности"></button>
                   </span>
                 </label>
-                <input class="visually-hidden" id="crop-input" name="crop-input" type="range" min="1" max="100" step="1" value="70">
-                <input class="visually-hidden" id="fill-input" name="fill-input" type="range" min="1" max="100" step="1" value="10">
-                <input class="visually-hidden" id="contrast-input" name="contrast-input" type="range" min="1" max="100" step="1" value="50">
+                <input class="visually-hidden" id="crop-input" name="crop-input" type="range" min="1" max="100" step="1" value="70" tabindex="-1">
+                <input class="visually-hidden" id="fill-input" name="fill-input" type="range" min="1" max="100" step="1" value="10" tabindex="-1">
+                <input class="visually-hidden" id="contrast-input" name="contrast-input" type="range" min="1" max="100" step="1" value="50" tabindex="-1">
               </div>
               <div class="constructor__form-buttons">
-                  <button class="constructor__form-button constructor__form-button--submit" type="submit">Запостить</button>
-                  <button class="constructor__form-button constructor__form-button--reset" type="reset">Отмена</button>
+                  <button class="constructor__form-button constructor__form-button--submit" type="submit" aria-label="Запостить">Запостить</button>
+                  <button class="constructor__form-button constructor__form-button--reset" type="reset" aria-label="Сбрость значения по умолчанию">Отмена</button>
               </div>
             </div>
           </form>
@@ -221,7 +221,7 @@
     <footer class="page-footer">
       <div class="container-center">
         <div class="page-footer__wrapper">
-          <a class="page-footer__logo" href="index.html" title="logotype">
+          <a class="page-footer__logo" href="index.html" title="logotype" aria-label="pink-logo">
             <svg class="page-footer__logo-img page-footer__logo-img--tablet" width="145" height="40" xmlns="http://www.w3.org/2000/svg">
               <use xlink:href="img/sprite.svg#logo-color-tablet"></use>
             </svg>
@@ -231,21 +231,21 @@
           </a>
           <ul class="page-footer__social">
             <li class="page-footer__social-item">
-              <a href="https://twitter.com/" class="page-footer__social-link page-footer__social-link--twitter" title="twitter">
+              <a href="https://twitter.com/" class="page-footer__social-link page-footer__social-link--twitter" title="twitter" aria-label="twitter">
                 <svg class="page-footer__social-ico" width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite.svg#twitter-ico"></use>
                 </svg>
               </a>
             </li>
             <li class="page-footer__social-item">
-              <a href="https://facebook.com/" class="page-footer__social-link page-footer__social-link--facebook" title="facebook">
+              <a href="https://facebook.com/" class="page-footer__social-link page-footer__social-link--facebook" title="facebook" aria-label="facebook">
                 <svg class="page-footer__social-ico" width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite.svg#facebook-ico"></use>
                 </svg>
               </a>
             </li>
             <li class="page-footer__social-item">
-              <a href="https://youtube.com/" class="page-footer__social-link page-footer__social-link--youtube" title="youtube">
+              <a href="https://youtube.com/" class="page-footer__social-link page-footer__social-link--youtube" title="youtube" aria-label="youtube">
                 <svg class="page-footer__social-ico" width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <use xlink:href="img/sprite.svg#youtube-ico"></use>
                 </svg>
@@ -254,7 +254,7 @@
           </ul>
           <div class="page-footer__copyright">
             <span class="page-footer__copyright-text">Разработано</span>
-            <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright-link" title="copyright">
+            <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright-link" title="copyright" aria-label="Html Academy link">
               <svg class="page-footer__copyright-ico" width="27" height="34" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="img/sprite.svg#HTMLAcademy-logo"></use>
               </svg>
