@@ -186,7 +186,8 @@
                     <use xlink:href="img/sprite.svg#crop"></use>
                   </svg>
                   <span class="constructor__form-range  constructor__form-range--crop">
-                    <button type="button" class="constructor__form-handle constructor__form-handle--crop" aria-label="обрезать картинку"></button>
+                    <input class="visually-hidden constructor__input" id="crop-input" name="crop-input" type="range" min="1" max="100" step="1" value="70">
+                    <span class="constructor__form-handle constructor__form-handle--crop"></span>
                   </span>
                 </label>
                 <label class="constructor__form-tool" for="fill-input">
@@ -194,7 +195,8 @@
                     <use xlink:href="img/sprite.svg#fill"></use>
                   </svg>
                   <span class="constructor__form-range  constructor__form-range--fill">
-                    <button type="button" class="constructor__form-handle constructor__form-handle--fill" aria-label="Выбрать цвет заливки"></button>
+                    <input class="visually-hidden constructor__input" id="fill-input" name="fill-input" type="range" min="1" max="100" step="1" value="10">
+                    <span class="constructor__form-handle constructor__form-handle--fill"></span>
                   </span>
                 </label>
                 <label class="constructor__form-tool" for="contrast-input">
@@ -202,12 +204,10 @@
                     <use xlink:href="img/sprite.svg#contrast"></use>
                   </svg>
                   <span class="constructor__form-range constructor__form-range--contrast">
-                    <button type="button" class="constructor__form-handle constructor__form-handle--contrast" aria-label="Настройка контрастности"></button>
+                    <input class="visually-hidden constructor__input" id="contrast-input" name="contrast-input" type="range" min="1" max="100" step="1" value="50">
+                    <span class="constructor__form-handle constructor__form-handle--contrast"></span>
                   </span>
                 </label>
-                <input class="visually-hidden" id="crop-input" name="crop-input" type="range" min="1" max="100" step="1" value="70" tabindex="-1">
-                <input class="visually-hidden" id="fill-input" name="fill-input" type="range" min="1" max="100" step="1" value="10" tabindex="-1">
-                <input class="visually-hidden" id="contrast-input" name="contrast-input" type="range" min="1" max="100" step="1" value="50" tabindex="-1">
               </div>
               <div class="constructor__form-buttons">
                   <button class="constructor__form-button constructor__form-button--submit" type="submit" aria-label="Запостить">Запостить</button>
