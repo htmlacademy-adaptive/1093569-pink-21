@@ -222,11 +222,15 @@
   }
 }
 
+.constructor__input:focus + .constructor__form-handle {
+  outline: 2px solid #d22856;
+}
+
 .constructor__form-handle {
   display: none;
   position: absolute;
-  width: 14px;
-  height: 14px;
+  width: 10px;
+  height: 10px;
   background-color: #ffffff;
   border: 2px solid #d22856;
   cursor: pointer;
