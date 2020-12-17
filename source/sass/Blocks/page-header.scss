@@ -118,14 +118,12 @@
 .page-header__wrapper {
   display: flex;
   flex-direction: column;
-  max-width: 940px;
+  max-width: $desktop-width;
   margin: 0 auto;
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 130px;
-    padding-right: 130px;
   }
 }
 
@@ -142,6 +140,7 @@
 
   @media (min-width: $desktop-width) {
     border: 0;
+    padding-left: 10px;
   }
 }
 
